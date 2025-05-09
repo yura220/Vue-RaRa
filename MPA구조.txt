@@ -1,0 +1,6 @@
+/main
+/raniy
+/cloudy
+/sunny
+/snowy
+/event
