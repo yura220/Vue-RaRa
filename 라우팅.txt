@@ -2,16 +2,21 @@ src/
 ├── App.vue          ← 페이지 단위 컴포넌트
 ├── components/     ← 재사용 가능한 UI 컴포넌트들
 │   ├── Home.vue
-│   ├── Sunny.vue
-│   ├── Cloudy.vue
-│   ├── Snowy.vue
-│   ├── Rainy.vue
+│   ├── Weather.vue
+│   ├── CodyList.vue
+│   ├── ActivityList.vue
+│   ├── ItemList.vue
 │   ├── Event.vue
 │   └── css/
 │        ├── main.css
-│        ├── season.css
+│        ├── Weather.css
+│        ├── CodyList.css
+│        ├── ActivityList.css
+│        ├── ItemList.css
 │        ├── event.css
 │        └── common.css
 ├── public/            ← 이미지 저장
 │   └── img/
 │        └── svg/
+├── router/
+│   └── index.js
