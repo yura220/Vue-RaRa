@@ -1,17 +1,19 @@
 <script setup>
 import { useRoute, useRouter } from 'vue-router';
 import { weatherMap } from './js/weatherDataMap.js';
-import './css/codyDetail.css'
+import './css/codyDetail.css';
 
 const route = useRoute();
 const router = useRouter();
+
 const weatherType = route.params.weatherType;
 const weatherData = weatherMap[weatherType];
-const codys = weatherData.cody;
-const selectImages = weatherData.select;
-console.log('codys:', codys);
-console.log('selectImages:', selectImages);
 
+const codys = weatherData.cody;
+const items = weatherData.items;
+
+console.log('codys:', codys);
+console.log('items:', items);
 </script>
 
 <template>
@@ -19,26 +21,25 @@ console.log('selectImages:', selectImages);
     <div class="d-row">
       <div
         class="group-card"
-        v-for="select in selectImages"
-        :key="select.id"
+        v-for="cody in codys"
+        :key="cody.id"
       >
+        <!-- 상단 대표 이미지 (코디) -->
         <img
-          :src="select.image"
+          :src="cody.image"
           alt="코디 대표 이미지"
           class="s-image"
-          @click="router.push(`/${weatherType}/cody/detail/item/${select.id}`)"
+          @click="router.push(`/${weatherType}/cody/detail/item/${cody.id}`)"
         />
-        <div
-          class="d-card"
-          v-for="cody in codys.filter(c => c.group === select.id)"
-          :key="cody.id"
-        >
+
+        <!-- 하단 아이템 리스트 (해당 그룹에 속한 아이템들) -->
+        <div class="d-card">
           <ul class="d-lists">
             <li
-              v-for="(item, i) in cody.items"
-              :key="i"
+              v-for="item in items.filter(i => i.group === cody.group)"
+              :key="item.id"
               class="d-list"
-              @click="router.push(`/${weatherType}/cody/detail/item/${select.id}`)"
+              @click="router.push(`/${weatherType}/cody/detail/item/${cody.id}`)"
             >
               <img :src="item.image" alt="아이템 이미지" class="d-thumb" />
               <div class="d-text">

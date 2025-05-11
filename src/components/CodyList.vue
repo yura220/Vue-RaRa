@@ -1,8 +1,6 @@
 <script setup>
 import { useRouter, useRoute } from 'vue-router';
 import { weatherMap } from './js/weatherDataMap.js';
-import HeaderNav from './HeaderNav.vue';
-import BottomButton from './BottomButton.vue';
 import './css/codyList.css'
 
 const router = useRouter();
@@ -24,8 +22,6 @@ function goToDetail() {
 
 <template>
   <section id="codylist">
-    <HeaderNav />
-
     <div class="cody-layout">
       <section class="cody-left">
         <div class="cody-list">
@@ -54,7 +50,5 @@ function goToDetail() {
         </ul>
       </section>
     </div>
-
-    <BottomButton />
   </section>
 </template>

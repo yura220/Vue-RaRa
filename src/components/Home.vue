@@ -5,11 +5,10 @@ import Weather from './Weather.vue';
 </script>
 
 <template>
-  <!-- 타이틀 영역 -->
   <div class="title">
     <div class="wrap">
       <div class="title-img">
-        <img src="/img/main.png" alt="홈 타이틀 이미지" />
+        <img src="https://placehold.co/1920x800?text=title" alt="홈 타이틀 이미지" />
       </div>
       <div class="title-text">
         <h2>오늘 날씨에 맞는</h2>

@@ -8,17 +8,16 @@ const weatherType = route.params.weatherType;
 const groupId = Number(route.params.itemId);
 
 const weatherData = weatherMap[weatherType];
-const selectImage = weatherData.select.find(s => s.id === groupId)?.image;
+const codyImage = weatherData.cody.find(c => c.group === groupId)?.image;
 const groupItems = weatherData.items.filter(item => item.group === groupId);
-console.log('weatherType:', weatherType); // 'rainy'?
-console.log('weatherData.items:', weatherData.items);
+
 </script>
 
 <template>
   <section id="item">
     <div class="i-layout">
       <div class="i-main">
-        <img :src="selectImage" alt="코디 대표 이미지" class="i-image" />
+        <img :src="codyImage" alt="코디 대표 이미지" class="i-image" />
       </div>
 
       <div class="i-box grid">

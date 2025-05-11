@@ -1,15 +1,18 @@
 <template>
-  <header class="header-nav">
-    <div class="nav-left">
-      <img src="/img/logo.png" alt="로고" class="logo" />
+  <aside id="aside">
+    <div class="aside-box">
+      <button>
+        <img src="https://placehold.co/98x50?text=sunny" alt="sunny" class="a-icon" />
+      </button>
+      <button>
+        <img src="https://placehold.co/98x50?text=cloudy" alt="cloudy" class="a-icon" />
+      </button>
+      <button>
+        <img src="https://placehold.co/98x50?text=rainy" alt="rainy" class="a-icon" />
+      </button>
+      <button>
+        <img src="https://placehold.co/98x50?text=snowy" alt="snowy" class="a-icon" />
+      </button>
     </div>
-    <div class="nav-right">
-      <img src="/img/icon-user.png" alt="유저 아이콘" class="icon" />
-      <img src="/img/icon-menu.png" alt="메뉴 아이콘" class="icon" />
-    </div>
-  </header>
+  </aside>
 </template>
-
-<script setup>
-// 추후 props나 상태 필요 시 여기에 추가
-</script>

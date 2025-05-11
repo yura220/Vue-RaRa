@@ -1,15 +1,12 @@
 <template>
-  <header class="header-nav">
+  <header id="header">
     <div class="nav-left">
-      <img src="/img/logo.png" alt="로고" class="logo" />
+      <img src="https://placehold.co/95x60?text=LOGO" alt="로고" class="logo" />
     </div>
     <div class="nav-right">
-      <img src="/img/icon-user.png" alt="유저 아이콘" class="icon" />
-      <img src="/img/icon-menu.png" alt="메뉴 아이콘" class="icon" />
+      <img src="https://placehold.co/40x40" alt="유저 아이콘" class="icon" />
+      <img src="https://placehold.co/40x40" alt="메뉴 아이콘" class="icon" />
+      <img src="https://placehold.co/40x40" alt="햄버거" class="icon">
     </div>
   </header>
 </template>
-
-<script setup>
-// 추후 props나 상태 필요 시 여기에 추가
-</script>
