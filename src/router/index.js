@@ -10,20 +10,16 @@ import Event from '../components/Event.vue';
 const routes = [
   //  아이템 상세 뷰
   {
-    path: '/:weatherType/cody/detail/item/:itemId',
+    path: '/:weatherType/cody/item/:itemId',
     component: ItemList,
   },
   {
-    path: '/:weatherType/cody/detail',
+    path: '/:weatherType/cody',
     component: CodyDetail
   },
   {
-    path: '/:weatherType/cody',
-    component: CodyList,
-  },
-  {
     path: '/:weatherType(rainy|sunny|cloudy|snowy)',
-    component: Weather,
+    component: CodyList,
   },
   {
     path: '/event',

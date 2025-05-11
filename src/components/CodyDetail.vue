@@ -29,7 +29,7 @@ console.log('items:', items);
           :src="cody.image"
           alt="코디 대표 이미지"
           class="s-image"
-          @click="router.push(`/${weatherType}/cody/detail/item/${cody.id}`)"
+          @click="router.push(`/${weatherType}/cody/item/${cody.id}`)"
         />
 
         <!-- 하단 아이템 리스트 (해당 그룹에 속한 아이템들) -->
@@ -39,7 +39,7 @@ console.log('items:', items);
               v-for="item in items.filter(i => i.group === cody.group)"
               :key="item.id"
               class="d-list"
-              @click="router.push(`/${weatherType}/cody/detail/item/${cody.id}`)"
+              @click="router.push(`/${weatherType}/cody/item/${cody.id}`)"
             >
               <img :src="item.image" alt="아이템 이미지" class="d-thumb" />
               <div class="d-text">

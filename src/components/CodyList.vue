@@ -16,7 +16,7 @@ const weatherTypeLabel = {
 }[weatherType];
 
 function goToDetail() {
-  router.push(`/${weatherType}/cody/detail`);
+  router.push(`/${weatherType}/cody`);
 }
 </script>
 

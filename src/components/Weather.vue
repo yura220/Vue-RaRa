@@ -17,7 +17,7 @@ function goToWeather(type) {
   if (type === 'event') {
     router.push('/event');
   } else {
-    router.push(`/${type}/cody`);
+    router.push(`/${type}`);
   }
 }
 import { ref } from 'vue';
