@@ -1,0 +1,16 @@
+#aside {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: fit-content;
+}
+
+#aside .aside-box {}
+
+#aside .aside-box a {}
+
+#aside .aside-box a button {}
+
+#aside .aside-box a button img {}
+
+#aside .a-icon {}

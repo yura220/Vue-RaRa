@@ -1,0 +1,35 @@
+#title{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#title .title-wrap {}
+
+#title .title-img {}
+
+#title .title-img img {
+  background-position: center;
+}
+
+#title .title-text {}
+
+#title .title-text h2 {}
+
+#title .title-text p {}
+
+/* 스크롤 하단 */
+
+#weather {}
+
+#weather .w-grid {}
+
+#weather .tile {}
+
+#weather .tile img {}
+
+#weather .tile .tile-img {}
+
+#weather .tile .tile-label {}
+
+#weather .calendar {}
