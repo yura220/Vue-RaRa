@@ -25,7 +25,6 @@ console.log('items:', items);
           v-for="cody in codys"
           :key="cody.id"
         >
-          <!-- 상단 대표 이미지 (코디) -->
           <img
             :src="cody.image"
             alt="코디 대표 이미지"
