@@ -30,6 +30,6 @@ onBeforeUnmount(() => {
 <template>
   <Sidebar v-if="showSidebar" />
   <HeaderNav />
-  <router-view />
+  <router-view :key="$route.fullPath" />
   <BottomButton />
 </template>

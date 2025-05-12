@@ -42,7 +42,7 @@ const weatherTypeLabel = {
         </div>
 
         <div class="cody-right">
-          <h3 class="a-title">{{ weatherTypeLabel }} 이렇게 해보세요</h3>
+          <h3 class="a-title">{{ weatherTypeLabel.value }} 이렇게 해보세요</h3>
           <ul class="a-lists">
             <li v-for="(a, i) in weatherData.activities" :key="i" class="a-list">
               {{ a.title }}
