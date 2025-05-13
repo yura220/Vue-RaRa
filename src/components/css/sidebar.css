@@ -2,5 +2,26 @@
   position: fixed;
   width: 100px;
   height: 100%;
-  background-color: #FE9B9B;
+  background-color: #FFF9CE;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+
+#side .flex{
+  margin-top: 15px;
+}
+
+#side a{
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#side .logo{
+  width: 80px;
+  height: 100%;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.15));
 }
