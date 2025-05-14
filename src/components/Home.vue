@@ -2,6 +2,7 @@
 import './css/main.css'
 import Weather from './Weather.vue';
 import Popup from './Popup.vue'
+import BottomButton from './BottomButton.vue'
 import { useRouter } from 'vue-router';
 import { ref, onMounted } from 'vue';
 
@@ -47,7 +48,7 @@ function handleClose() {
 
     <button class="close-btn" @click="handleClose">닫기</button>
   </Popup>
-  <div id="title">
+  <main id="title">
     <div class="title-wrap">
       <div class="title-img">
         <img src="https://placehold.co/1920x800?text=title" alt="홈 타이틀 이미지" />
@@ -57,9 +58,10 @@ function handleClose() {
         <p>쇼핑 큐레이션과 추천을 만나보세요!</p>
       </div>
     </div>
-  </div>
+  </main>
 
   <Weather />
+  <BottomButton />
 </template>
 <style scoped>
 .event-click {

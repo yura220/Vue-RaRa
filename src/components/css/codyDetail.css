@@ -1,23 +1,60 @@
 #detail {
   position: relative;
-  height: 2092px;
+  overflow: hidden;
+  height: 100vh;
 }
 
-#detail .wrap {}
+#detail .d-wrap {
+  height: 100%;
+  overflow: visible;
+  padding-left: calc((100% - 1440px - 17px) /2);
+  width: 100%;
+  box-sizing: border-box;
+}
 
-#detail .d-row {
+#detail .d-left {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
-  width: 1030px;
+  width: 100%;
   row-gap: 50px;
+  height: auto;
+  margin-top: 50px;
+}
+
+.pin-spacer {
+  width: 100% !important;
+}
+
+.pin-wrap {
+  height: 100vh;
+  width: 1680px !important;
+  position: relative;
+  max-width: 1680px !important;
+  display: grid;
+  grid-template-columns: 1fr 640px;
+}
+
+.inner-scroll {
+  will-change: transform;
 }
 
 #detail .group-card {}
 
-#detail .s-image {
+#detail .s-img-box{
   margin-bottom: 10px;
   border-radius: 12px;
+  width: 345px;
+  height: 432px;
+  overflow: hidden;
+  position: relative;
+}
+
+#detail .s-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 비율 유지하면서 꽉 채움 */
+  display: block;
 }
 
 #detail .d-card {}
@@ -63,7 +100,7 @@
   border-radius: 50%;
 }
 
-#detail .d-text span p{
+#detail .d-text div p{
   font-size: 14px;
 }
 
@@ -71,8 +108,9 @@
   display: block;
   width: 640px;
   height: 100%;
-  position: absolute;
-  right: 0;
+  position: sticky;
   top: 0;
   background-color: aqua;
+  background-image: url(https://placehold.co/640x950/orange/white);
+  justify-self: end;
 }

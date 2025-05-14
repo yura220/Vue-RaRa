@@ -45,6 +45,54 @@ const weatherTypeLabel = {
   snowy: '눈 오는 날',
   cloudy: '흐린 날',
 }[weatherType];
+
+// detail 스크롤 애니메이션 ----------------------------------------------------------
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+const pinWrapRef  = ref(null)
+const innerRef    = ref(null)
+
+gsap.registerPlugin(ScrollTrigger)
+
+onMounted(async () => {
+  await nextTick()
+  gsap.registerPlugin(ScrollTrigger)
+
+  const pinEl   = pinWrapRef.value
+const innerEl = innerRef.value
+
+const pinH     = pinEl.clientHeight
+const contentH = innerEl.scrollHeight
+const extra = 100;
+const distance = innerEl.scrollHeight - pinEl.clientHeight + extra;
+
+// pin 설정
+ScrollTrigger.create({
+  trigger: "#detail",
+  start: "top top",
+  end: `+=${distance}`,
+  pin: true,
+  scrub: true,
+})
+
+// 내부 스크롤 애니메이션
+gsap.to(innerEl, {
+  y: -distance,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#detail",
+    start: "top top",
+    end: `+=${distance}`,
+    scrub: true,
+  },
+})
+
+  // 리소스 로드(이미지, 글꼴 등) 끝난 뒤에도 한 번 더
+  window.addEventListener('load', () => ScrollTrigger.refresh())
+})
+
+
 </script>
 
 <template>
@@ -58,7 +106,7 @@ const weatherTypeLabel = {
               :key="select.id"
               class="s-card"
             >
-              <img :src="select.image" alt="코디 이미지" class="s-image" />
+              <img :src="select.image" alt="" class="s-image" />
               <p class="cody-desc">{{ select.desc }}</p>
             </div>
           </div>
@@ -76,48 +124,50 @@ const weatherTypeLabel = {
       </div>
     </div>
   </section>
-  <section id="detail">
-    <div class="wrap">
-      <div class="d-row">
-        <div
-          class="group-card"
-          v-for="cody in codys"
-          :key="cody.id"
-        >
-          <img  :src="detailImages.find(d => d.group === cody.group)?.image"  alt="디테일 이미지"  class="s-image"/>
+  <section id="detail" ref="detailRef">
+    <div class="d-wrap">
+      <div class="pin-wrap" ref="pinWrapRef">
+        <div class="d-left inner-scroll" ref="innerRef">
+          <div
+            class="group-card"
+            v-for="cody in codys"
+            :key="cody.id"
+          >
+            <div class="s-img-box">
+              <img class="s-image" :src="detailImages.find(d => d.group === cody.group)?.image"  alt="" />
+            </div>
+            <!-- 하단 아이템 리스트 -->
+            <div class="d-card">
+              <ul class="d-lists">
+                <li
+                  v-for="item in items.filter(i => i.group === cody.group)"
+                  :key="item.id"
+                  class="d-list"
+                >
 
-          <!-- 하단 아이템 리스트 -->
-          <div class="d-card">
-            <ul class="d-lists">
-              <li
-                v-for="item in items.filter(i => i.group === cody.group)"
-                :key="item.id"
-                class="d-list"
-              >
-                <img :src="item.image" alt="아이템 이미지" class="d-thumb" />
-                <div class="d-text">
-                  <strong>{{ item.brand }}</strong>
-                  <p>{{ item.desc }}</p>
-                  <span>
-                    <span class="color-dot" :style="{ backgroundColor: item.colorCode }"></span>
-                    <p>{{ item.color }}</p>
-                  </span>
-                </div>
-              </li>
-            </ul>
+                  <img :src="item.image" :alt="item.brand + ' 제품 이미지'" class="d-thumb" />
+                  <div class="d-text">
+                    <strong>{{ item.brand }}</strong>
+                    <p>{{ item.desc }}</p>
+                    <div>
+                      <span class="color-dot" :style="{ backgroundColor: item.colorCode }"></span>
+                      <p>{{ item.color }}</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+        <div class="side">    </div>
       </div>
-    </div>
-    <div class="side">
-
     </div>
   </section>
   <section id="item">
     <div class="wrap flex">
       <div class="i-layout">
         <div class="i-main">
-          <img :src="weatherData.select[0].image" alt="코디 대표 이미지" class="i-image" />
+          <img :src="weatherData.select[0].image" alt="" class="i-image" />
         </div>
 
       <div class="i-box" v-if="showSwiper">
@@ -131,11 +181,11 @@ const weatherTypeLabel = {
             drag: true,
             autoplay: false,  // 자동 넘김 비활성화
           }"
-        >
+        aria-label="추천 아이템 슬라이더">
           <SplideSlide v-for="(group, i) in groupedItems" :key="i">
             <div class="vertical-group">
               <div v-for="item in group" :key="item.id" class="i-card">
-                <img :src="item.image" class="i-thumb" />
+                <img :src="item.image" class="i-thumb" :alt="item.brand + ' 제품 이미지'" />
                 <div class="i-info">
                   <strong>{{ item.brand }}</strong>
                   <p>{{ item.desc }}</p>

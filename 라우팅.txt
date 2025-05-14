@@ -16,7 +16,7 @@ src/
 │   ├── CodyDetail.vue        ← 코디3가지+아이템
 │   ├── ItemList.vue          ← 코디1가지+아이템
 │   ├── Event.vue             ← 이벤트페이지
-│   ├── Header.vue            ← 헤더
+│   ├── HeaderNav.vue            ← 헤더
 │   ├── BottomButton.vue      ← 하단 버튼
 │   ├── css/
 │   │    ├── main.css
