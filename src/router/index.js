@@ -8,9 +8,9 @@ import Event from '../components/Event.vue';
 const routes = [
   //  아이템 상세 뷰
   {
-  path: '/:weatherType(rainy|sunny|cloudy|snowy)',
-  component: CodyList,
-},
+    path: '/:weatherType(rainy|sunny|cloudy|snowy)',
+    component: CodyList,
+  },
   {
     path: '/event',
     component: Event,

@@ -41,7 +41,7 @@
 
 #detail .group-card {}
 
-#detail .s-img-box{
+#detail .s-img-box {
   margin-bottom: 10px;
   border-radius: 12px;
   width: 345px;
@@ -53,7 +53,8 @@
 #detail .s-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* 비율 유지하면서 꽉 채움 */
+  object-fit: cover;
+  /* 비율 유지하면서 꽉 채움 */
   display: block;
 }
 
@@ -83,28 +84,28 @@
   font-size: 16px;
 }
 
-#detail .d-text p{
+#detail .d-text p {
   font-size: 20px;
 }
 
-#detail .d-text span{
+#detail .d-text span {
   display: flex;
   align-items: center;
   gap: 7px;
 }
 
-#detail .d-text .color-dot{
+#detail .d-text .color-dot {
   display: block;
   width: 11px;
   height: 11px;
   border-radius: 50%;
 }
 
-#detail .d-text div p{
+#detail .d-text div p {
   font-size: 14px;
 }
 
-#detail .side{
+#detail .side {
   display: block;
   width: 640px;
   height: 100%;

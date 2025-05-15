@@ -52,6 +52,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
 #item span:nth-child(1) {}
 
 #item span:nth-child(2) {}
@@ -67,8 +68,7 @@
   font-size: 24px;
 }
 
-#item .i-info p:nth-child(4) {
-}
+#item .i-info p:nth-child(4) {}
 
 #item .i-info div {
   align-self: end;
@@ -76,7 +76,7 @@
 
 #item .i-info .buy {}
 
-#item button{
+#item button {
   border: none;
   background-color: #333;
   color: white;
@@ -89,13 +89,19 @@
   margin-right: 10px;
 }
 
-#item button:nth-child(4){}
+#item button:nth-child(4) {}
 
-#item button:nth-child(5){}
+#item button:nth-child(5) {}
 
 /* 슬라이드 */
-.splide {height: 100%;}
-.splide__track{height: 100%;}
+.splide {
+  height: 100%;
+}
+
+.splide__track {
+  height: 100%;
+}
+
 .splide__slide {
   display: flex;
   justify-content: center;
@@ -103,7 +109,9 @@
   min-height: auto;
 }
 
-.splide__slide{margin: 0 !important;}
+.splide__slide {
+  margin: 0 !important;
+}
 
 .vertical-group {
   display: flex;

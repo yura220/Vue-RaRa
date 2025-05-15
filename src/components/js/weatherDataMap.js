@@ -28,37 +28,37 @@ export const weatherMap = {
     ],
 
     items: [
-      { id: 1,group: 1, brand: 'FRACTURE STUDIO', desc: 'Soft Crash Hoodie',color:'Yellow',colorCode:'#C7930B', price: '39,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 2,group: 1, brand: 'NOVA:VOID', desc: 'Null Code Pullover Hoodie',color:'Pink',colorCode:'#E9C1E5', price: '29,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 3,group: 1, brand: 'URBORN', desc: 'Eclipse Layer Hoodie',color:'Black',colorCode:'#000000', price: '89,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 4,group: 1, brand: 'VEILNINE', desc: 'Static Halo Necklace',color:'Rose Gold',colorCode:'#B76E79', price: '49,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 5,group: 2, brand: 'ELANORA', desc: 'Drip Echo Earrings',color:'Gold',colorCode:'#FFD700', price: '39,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 6,group: 2, brand: 'SOLVERE', desc: 'Glassburn Loop Ring',color:'Gold',colorCode:'#FFD700', price: '29,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 7,group: 2, brand: 'ORILIA', desc: 'Orbit Chain',color:'Gold',colorCode:'#FFD700', price: '89,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 8,group: 2, brand: 'MAISON LUNE', desc: 'Marina Mood Tee',color:'Green',colorCode:'#155615', price: '49,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 9,group: 3, brand: 'SOYLA', desc: 'Muse Blouse',color:'Beige',colorCode:'#9B8779', price: '39,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 10,group: 3, brand: 'LUNEY STUDIO', desc: 'Coast Loop Shirt',color:'Gray',colorCode:'#696762', price: '29,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 11,group: 3, brand: 'NOTUS', desc: 'Cherie Trace Tee',color:'Black',colorCode:'#C7930B', price: '89,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 12,group: 3, brand: 'NOTUS', desc: 'Shadow Loop Hoodie',color:'Purple',colorCode:'#710183', price: '49,000원', image: 'https://placehold.co/85x85?text=item' }
+      { id: 1, group: 1, brand: 'FRACTURE STUDIO', desc: 'Soft Crash Hoodie', color: 'Yellow', colorCode: '#C7930B', price: '39,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 2, group: 1, brand: 'NOVA:VOID', desc: 'Null Code Pullover Hoodie', color: 'Pink', colorCode: '#E9C1E5', price: '29,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 3, group: 1, brand: 'URBORN', desc: 'Eclipse Layer Hoodie', color: 'Black', colorCode: '#000000', price: '89,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 4, group: 1, brand: 'VEILNINE', desc: 'Static Halo Necklace', color: 'Rose Gold', colorCode: '#B76E79', price: '49,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 5, group: 2, brand: 'ELANORA', desc: 'Drip Echo Earrings', color: 'Gold', colorCode: '#FFD700', price: '39,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 6, group: 2, brand: 'SOLVERE', desc: 'Glassburn Loop Ring', color: 'Gold', colorCode: '#FFD700', price: '29,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 7, group: 2, brand: 'ORILIA', desc: 'Orbit Chain', color: 'Gold', colorCode: '#FFD700', price: '89,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 8, group: 2, brand: 'MAISON LUNE', desc: 'Marina Mood Tee', color: 'Green', colorCode: '#155615', price: '49,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 9, group: 3, brand: 'SOYLA', desc: 'Muse Blouse', color: 'Beige', colorCode: '#9B8779', price: '39,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 10, group: 3, brand: 'LUNEY STUDIO', desc: 'Coast Loop Shirt', color: 'Gray', colorCode: '#696762', price: '29,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 11, group: 3, brand: 'NOTUS', desc: 'Cherie Trace Tee', color: 'Black', colorCode: '#C7930B', price: '89,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 12, group: 3, brand: 'NOTUS', desc: 'Shadow Loop Hoodie', color: 'Purple', colorCode: '#710183', price: '49,000원', image: 'https://placehold.co/85x85?text=item' }
     ],
     activities: [
       { id: 1, title: '비 오는 날도 활기차게!' },
-      { id: 2, title: '비 오는 날 산책'  },
+      { id: 2, title: '비 오는 날 산책' },
       { id: 3, title: '집콕 영화 감상' },
       { id: 4, title: '집콕 영화 감상' }
     ],
     detail: [
       {
-        id: 1,group: 1, image: 'https://placehold.co/345x540/orange/white',
+        id: 1, group: 1, image: 'https://placehold.co/345x540/orange/white',
       },
       {
-        id: 2,group: 2, image: 'https://placehold.co/345x540/orange/white',
+        id: 2, group: 2, image: 'https://placehold.co/345x540/orange/white',
       },
       {
-        id: 3,group: 3, image: 'https://placehold.co/345x540/orange/white',
+        id: 3, group: 3, image: 'https://placehold.co/345x540/orange/white',
       }
     ],
-    select:[{id: 1, image: 'https://placehold.co/345x540/000000/FFFFFF/png'}],
+    select: [{ id: 1, image: 'https://placehold.co/345x540/000000/FFFFFF/png' }],
   },
   sunny: {
     cody: [
@@ -89,18 +89,18 @@ export const weatherMap = {
     ],
 
     items: [
-      { id: 1,group: 1, brand: 'FRACTURE STUDIO', desc: 'Soft Crash Hoodie',color:'Yellow',colorCode:'#C7930B', price: '39,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 2,group: 1, brand: 'NOVA:VOID', desc: 'Null Code Pullover Hoodie',color:'Pink',colorCode:'#E9C1E5', price: '29,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 3,group: 1, brand: 'URBORN', desc: 'Eclipse Layer Hoodie',color:'Black',colorCode:'#000000', price: '89,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 4,group: 1, brand: 'VEILNINE', desc: 'Static Halo Necklace',color:'Rose Gold',colorCode:'#B76E79', price: '49,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 5,group: 2, brand: 'ELANORA', desc: 'Drip Echo Earrings',color:'Gold',colorCode:'#FFD700', price: '39,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 6,group: 2, brand: 'SOLVERE', desc: 'Glassburn Loop Ring',color:'Gold',colorCode:'#FFD700', price: '29,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 7,group: 2, brand: 'ORILIA', desc: 'Orbit Chain',color:'Gold',colorCode:'#FFD700', price: '89,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 8,group: 2, brand: 'MAISON LUNE', desc: 'Marina Mood Tee',color:'Green',colorCode:'#155615', price: '49,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 9,group: 3, brand: 'SOYLA', desc: 'Muse Blouse',color:'Beige',colorCode:'#9B8779', price: '39,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 10,group: 3, brand: 'LUNEY STUDIO', desc: 'Coast Loop Shirt',color:'Gray',colorCode:'#696762', price: '29,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 11,group: 3, brand: 'NOTUS', desc: 'Cherie Trace Tee',color:'Black',colorCode:'#C7930B', price: '89,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 12,group: 3, brand: 'NOTUS', desc: 'Shadow Loop Hoodie',color:'Purple',colorCode:'#710183', price: '49,000원', image: 'https://placehold.co/85x85?text=item' }
+      { id: 1, group: 1, brand: 'FRACTURE STUDIO', desc: 'Soft Crash Hoodie', color: 'Yellow', colorCode: '#C7930B', price: '39,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 2, group: 1, brand: 'NOVA:VOID', desc: 'Null Code Pullover Hoodie', color: 'Pink', colorCode: '#E9C1E5', price: '29,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 3, group: 1, brand: 'URBORN', desc: 'Eclipse Layer Hoodie', color: 'Black', colorCode: '#000000', price: '89,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 4, group: 1, brand: 'VEILNINE', desc: 'Static Halo Necklace', color: 'Rose Gold', colorCode: '#B76E79', price: '49,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 5, group: 2, brand: 'ELANORA', desc: 'Drip Echo Earrings', color: 'Gold', colorCode: '#FFD700', price: '39,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 6, group: 2, brand: 'SOLVERE', desc: 'Glassburn Loop Ring', color: 'Gold', colorCode: '#FFD700', price: '29,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 7, group: 2, brand: 'ORILIA', desc: 'Orbit Chain', color: 'Gold', colorCode: '#FFD700', price: '89,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 8, group: 2, brand: 'MAISON LUNE', desc: 'Marina Mood Tee', color: 'Green', colorCode: '#155615', price: '49,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 9, group: 3, brand: 'SOYLA', desc: 'Muse Blouse', color: 'Beige', colorCode: '#9B8779', price: '39,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 10, group: 3, brand: 'LUNEY STUDIO', desc: 'Coast Loop Shirt', color: 'Gray', colorCode: '#696762', price: '29,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 11, group: 3, brand: 'NOTUS', desc: 'Cherie Trace Tee', color: 'Black', colorCode: '#C7930B', price: '89,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 12, group: 3, brand: 'NOTUS', desc: 'Shadow Loop Hoodie', color: 'Purple', colorCode: '#710183', price: '49,000원', image: 'https://placehold.co/85x85?text=item' }
     ],
     activities: [
       { id: 1, title: '비 오는 날도 활기차게! ' },
@@ -110,16 +110,16 @@ export const weatherMap = {
     ],
     detail: [
       {
-        id: 1,group: 1, image: 'https://placehold.co/345x540/orange/white',
+        id: 1, group: 1, image: 'https://placehold.co/345x540/orange/white',
       },
       {
-        id: 2,group: 2, image: 'https://placehold.co/345x540/orange/white',
+        id: 2, group: 2, image: 'https://placehold.co/345x540/orange/white',
       },
       {
-        id: 3,group: 3, image: 'https://placehold.co/345x540/orange/white',
+        id: 3, group: 3, image: 'https://placehold.co/345x540/orange/white',
       }
     ],
-    select:[{id: 1, image: 'https://placehold.co/345x540/000000/FFFFFF/png'}],
+    select: [{ id: 1, image: 'https://placehold.co/345x540/000000/FFFFFF/png' }],
   },
 
   cloudy: {
@@ -151,18 +151,18 @@ export const weatherMap = {
     ],
 
     items: [
-      { id: 1,group: 1, brand: 'FRACTURE STUDIO', desc: 'Soft Crash Hoodie',color:'Yellow',colorCode:'#C7930B', price: '39,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 2,group: 1, brand: 'NOVA:VOID', desc: 'Null Code Pullover Hoodie',color:'Pink',colorCode:'#E9C1E5', price: '29,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 3,group: 1, brand: 'URBORN', desc: 'Eclipse Layer Hoodie',color:'Black',colorCode:'#000000', price: '89,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 4,group: 1, brand: 'VEILNINE', desc: 'Static Halo Necklace',color:'Rose Gold',colorCode:'#B76E79', price: '49,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 5,group: 2, brand: 'ELANORA', desc: 'Drip Echo Earrings',color:'Gold',colorCode:'#FFD700', price: '39,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 6,group: 2, brand: 'SOLVERE', desc: 'Glassburn Loop Ring',color:'Gold',colorCode:'#FFD700', price: '29,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 7,group: 2, brand: 'ORILIA', desc: 'Orbit Chain',color:'Gold',colorCode:'#FFD700', price: '89,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 8,group: 2, brand: 'MAISON LUNE', desc: 'Marina Mood Tee',color:'Green',colorCode:'#155615', price: '49,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 9,group: 3, brand: 'SOYLA', desc: 'Muse Blouse',color:'Beige',colorCode:'#9B8779', price: '39,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 10,group: 3, brand: 'LUNEY STUDIO', desc: 'Coast Loop Shirt',color:'Gray',colorCode:'#696762', price: '29,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 11,group: 3, brand: 'NOTUS', desc: 'Cherie Trace Tee',color:'Black',colorCode:'#C7930B', price: '89,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 12,group: 3, brand: 'NOTUS', desc: 'Shadow Loop Hoodie',color:'Purple',colorCode:'#710183', price: '49,000원', image: 'https://placehold.co/85x85?text=item' }
+      { id: 1, group: 1, brand: 'FRACTURE STUDIO', desc: 'Soft Crash Hoodie', color: 'Yellow', colorCode: '#C7930B', price: '39,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 2, group: 1, brand: 'NOVA:VOID', desc: 'Null Code Pullover Hoodie', color: 'Pink', colorCode: '#E9C1E5', price: '29,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 3, group: 1, brand: 'URBORN', desc: 'Eclipse Layer Hoodie', color: 'Black', colorCode: '#000000', price: '89,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 4, group: 1, brand: 'VEILNINE', desc: 'Static Halo Necklace', color: 'Rose Gold', colorCode: '#B76E79', price: '49,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 5, group: 2, brand: 'ELANORA', desc: 'Drip Echo Earrings', color: 'Gold', colorCode: '#FFD700', price: '39,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 6, group: 2, brand: 'SOLVERE', desc: 'Glassburn Loop Ring', color: 'Gold', colorCode: '#FFD700', price: '29,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 7, group: 2, brand: 'ORILIA', desc: 'Orbit Chain', color: 'Gold', colorCode: '#FFD700', price: '89,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 8, group: 2, brand: 'MAISON LUNE', desc: 'Marina Mood Tee', color: 'Green', colorCode: '#155615', price: '49,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 9, group: 3, brand: 'SOYLA', desc: 'Muse Blouse', color: 'Beige', colorCode: '#9B8779', price: '39,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 10, group: 3, brand: 'LUNEY STUDIO', desc: 'Coast Loop Shirt', color: 'Gray', colorCode: '#696762', price: '29,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 11, group: 3, brand: 'NOTUS', desc: 'Cherie Trace Tee', color: 'Black', colorCode: '#C7930B', price: '89,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 12, group: 3, brand: 'NOTUS', desc: 'Shadow Loop Hoodie', color: 'Purple', colorCode: '#710183', price: '49,000원', image: 'https://placehold.co/85x85?text=item' }
     ],
     activities: [
       { id: 1, title: '비 오는 날도 활기차게! ' },
@@ -172,16 +172,16 @@ export const weatherMap = {
     ],
     detail: [
       {
-        id: 1,group: 1, image: 'https://placehold.co/345x540/orange/white',
+        id: 1, group: 1, image: 'https://placehold.co/345x540/orange/white',
       },
       {
-        id: 2,group: 2, image: 'https://placehold.co/345x540/orange/white',
+        id: 2, group: 2, image: 'https://placehold.co/345x540/orange/white',
       },
       {
-        id: 3,group: 3, image: 'https://placehold.co/345x540/orange/white',
+        id: 3, group: 3, image: 'https://placehold.co/345x540/orange/white',
       }
     ],
-    select:[{id: 1, image: 'https://placehold.co/345x540/000000/FFFFFF/png'}],
+    select: [{ id: 1, image: 'https://placehold.co/345x540/000000/FFFFFF/png' }],
   },
 
   snowy: {
@@ -213,18 +213,18 @@ export const weatherMap = {
     ],
 
     items: [
-      { id: 1,group: 1, brand: 'FRACTURE STUDIO', desc: 'Soft Crash Hoodie',color:'Yellow',colorCode:'#C7930B', price: '39,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 2,group: 1, brand: 'NOVA:VOID', desc: 'Null Code Pullover Hoodie',color:'Pink',colorCode:'#E9C1E5', price: '29,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 3,group: 1, brand: 'URBORN', desc: 'Eclipse Layer Hoodie',color:'Black',colorCode:'#000000', price: '89,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 4,group: 1, brand: 'VEILNINE', desc: 'Static Halo Necklace',color:'Rose Gold',colorCode:'#B76E79', price: '49,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 5,group: 2, brand: 'ELANORA', desc: 'Drip Echo Earrings',color:'Gold',colorCode:'#FFD700', price: '39,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 6,group: 2, brand: 'SOLVERE', desc: 'Glassburn Loop Ring',color:'Gold',colorCode:'#FFD700', price: '29,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 7,group: 2, brand: 'ORILIA', desc: 'Orbit Chain',color:'Gold',colorCode:'#FFD700', price: '89,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 8,group: 2, brand: 'MAISON LUNE', desc: 'Marina Mood Tee',color:'Green',colorCode:'#155615', price: '49,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 9,group: 3, brand: 'SOYLA', desc: 'Muse Blouse',color:'Beige',colorCode:'#9B8779', price: '39,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 10,group: 3, brand: 'LUNEY STUDIO', desc: 'Coast Loop Shirt',color:'Gray',colorCode:'#696762', price: '29,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 11,group: 3, brand: 'NOTUS', desc: 'Cherie Trace Tee',color:'Black',colorCode:'#C7930B', price: '89,000원', image: 'https://placehold.co/85x85?text=item' },
-      { id: 12,group: 3, brand: 'NOTUS', desc: 'Shadow Loop Hoodie',color:'Purple',colorCode:'#710183', price: '49,000원', image: 'https://placehold.co/85x85?text=item' }
+      { id: 1, group: 1, brand: 'FRACTURE STUDIO', desc: 'Soft Crash Hoodie', color: 'Yellow', colorCode: '#C7930B', price: '39,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 2, group: 1, brand: 'NOVA:VOID', desc: 'Null Code Pullover Hoodie', color: 'Pink', colorCode: '#E9C1E5', price: '29,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 3, group: 1, brand: 'URBORN', desc: 'Eclipse Layer Hoodie', color: 'Black', colorCode: '#000000', price: '89,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 4, group: 1, brand: 'VEILNINE', desc: 'Static Halo Necklace', color: 'Rose Gold', colorCode: '#B76E79', price: '49,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 5, group: 2, brand: 'ELANORA', desc: 'Drip Echo Earrings', color: 'Gold', colorCode: '#FFD700', price: '39,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 6, group: 2, brand: 'SOLVERE', desc: 'Glassburn Loop Ring', color: 'Gold', colorCode: '#FFD700', price: '29,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 7, group: 2, brand: 'ORILIA', desc: 'Orbit Chain', color: 'Gold', colorCode: '#FFD700', price: '89,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 8, group: 2, brand: 'MAISON LUNE', desc: 'Marina Mood Tee', color: 'Green', colorCode: '#155615', price: '49,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 9, group: 3, brand: 'SOYLA', desc: 'Muse Blouse', color: 'Beige', colorCode: '#9B8779', price: '39,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 10, group: 3, brand: 'LUNEY STUDIO', desc: 'Coast Loop Shirt', color: 'Gray', colorCode: '#696762', price: '29,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 11, group: 3, brand: 'NOTUS', desc: 'Cherie Trace Tee', color: 'Black', colorCode: '#C7930B', price: '89,000원', image: 'https://placehold.co/85x85?text=item' },
+      { id: 12, group: 3, brand: 'NOTUS', desc: 'Shadow Loop Hoodie', color: 'Purple', colorCode: '#710183', price: '49,000원', image: 'https://placehold.co/85x85?text=item' }
     ],
     activities: [
       { id: 1, title: '비 오는 날도 활기차게! ' },
@@ -234,15 +234,15 @@ export const weatherMap = {
     ],
     detail: [
       {
-        id: 1,group: 1, image: 'https://placehold.co/345x540/orange/white',
+        id: 1, group: 1, image: 'https://placehold.co/345x540/orange/white',
       },
       {
-        id: 2,group: 2, image: 'https://placehold.co/345x540/orange/white',
+        id: 2, group: 2, image: 'https://placehold.co/345x540/orange/white',
       },
       {
-        id: 3,group: 3, image: 'https://placehold.co/345x540/orange/white',
+        id: 3, group: 3, image: 'https://placehold.co/345x540/orange/white',
       }
     ],
-    select:[{id: 1, image: 'https://placehold.co/345x540/000000/FFFFFF/png'}],
+    select: [{ id: 1, image: 'https://placehold.co/345x540/000000/FFFFFF/png' }],
   },
 };

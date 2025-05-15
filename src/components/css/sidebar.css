@@ -1,4 +1,4 @@
-#side{
+#side {
   position: fixed;
   width: 72px;
   height: 100%;
@@ -8,11 +8,11 @@
   z-index: 200;
 }
 
-#side .flex{
+#side .flex {
   margin-top: 15px;
 }
 
-#side a{
+#side a {
   width: 100%;
   cursor: pointer;
   display: flex;
@@ -20,7 +20,7 @@
   align-items: center;
 }
 
-#side .logo{
+#side .logo {
   width: 60px;
   height: 100%;
   filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.15));

@@ -1,0 +1,162 @@
+#best {
+  background-color: #B1D7EC;
+  width: 100%;
+  height: 100vh;
+}
+
+#best .wrap {
+  background-color: #FFF9CF;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#best h2 {
+  margin-bottom: 15px;
+}
+
+#best .b-box {
+  background-color: white;
+  width: 1200px;
+  height: 750px;
+  background-image: url(/img/Look.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#best ul {
+  position: relative;
+}
+
+#best li {}
+
+#best .btn {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  filter: drop-shadow(0 3px 4px rgb(0, 0, 0, 0.1));
+  font-size: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+#best li:nth-child(1) .btn {
+  top: 260px;
+  left: 47%;
+}
+
+#best li:nth-child(2) .btn {
+  top: 190px;
+  left: 21%;
+}
+
+#best li:nth-child(3) .btn {
+  top: 290px;
+  left: 77%;
+}
+
+#best li:nth-child(4) .btn {
+  top: 615px;
+  left: 11%;
+}
+
+#best li:nth-child(5) .btn {
+  top: 550px;
+  left: 47.5%;
+}
+
+/* 팝업 */
+
+#best .p-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  overflow: hidden;
+}
+
+#best .p-inner {
+  background-color: #FFF9CF;
+  padding: 20px;
+  width: 1440px;
+  height: 1500px;
+  max-height: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.05s ease;
+  cursor: grab;
+  will-change: transform;
+}
+
+#best .p-main {
+  width: 1200px;
+  height: 670px;
+  position: relative;
+  background-color: white;
+}
+
+#best .p-content {}
+
+#best .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  background-color: #FFF9CF;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  filter: drop-shadow(0 3px 4px rgb(0, 0, 0, 0.1));
+}
+
+#best .main-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+#best .c-thumbs {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+#best .thumb-block {}
+
+#best .thum {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  object-fit: cover;
+  border: 2px solid transparent;
+  border-radius: 6px;
+}
+
+#best .thum:hover {
+  border-color: #333;
+}
+
+#best .r-items {}
+
+#best .r-info {}
+
+#best .r-info img {}
+
+#best .r-info p {}
+
+#best .r-info p:nth-child(1) {}
+
+#best .r-info p:nth-child(2) {}
