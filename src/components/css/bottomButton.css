@@ -1,0 +1,29 @@
+#aside {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: fit-content;
+}
+
+#aside .aside-box {}
+
+#aside .aside-box a {}
+
+#aside .aside-box a button {
+  width: 61px;
+  height: 35px;
+  border: 0;
+  background-color: white;
+  border-radius: 18px;
+  margin-left: 10px;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.1));
+  cursor: pointer;
+  font-size: 0;
+  transition: 0.3s;
+}
+
+#aside .aside-box a button:hover {
+  background-color: #FFF9CE;
+}
+
+#aside .a-icon {}
