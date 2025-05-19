@@ -40,7 +40,7 @@ function scrollToSection() {
 <template>
   <Popup v-if="showPopup" @close="handleClose" :dont-show-again.sync="dontShowAgain" />
 
-  <div class="title">
+  <div id="title">
     <div class="t-img-box">
       <div class="title-img">
       </div>
@@ -52,7 +52,7 @@ function scrollToSection() {
   </div>
 
     <div class="title-text">
-      <h1>날씨에 맞는 당신의 스타일<br>지금 확인해보세요</h1>
+      <h2>날씨에 맞는 당신의 스타일<br>지금 확인해보세요</h2>
       <p>오늘 날씨를 선택하고<br>스타일을 추천 받아보세요</p>
     </div>
 
