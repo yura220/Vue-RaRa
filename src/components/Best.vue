@@ -129,7 +129,7 @@ function goBackOrHome() {
         <ul>
           <li v-for="key in Object.keys(bestMap)" :key="key">
             <a href="#" class="btn" @click.prevent="openPopup(key)">
-              {{ key }}
+              +
             </a>
           </li>
         </ul>

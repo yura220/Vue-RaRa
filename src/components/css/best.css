@@ -39,12 +39,16 @@
   height: 50px;
   background-color: white;
   border-radius: 50%;
-  filter: drop-shadow(0 3px 4px rgb(0, 0, 0, 0.1));
+  filter: drop-shadow(0 3px 4px rgb(0, 0, 0, 0.2));
   font-size: 30px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   position: absolute;
+}
+
+#best .btn:hover{
+  background-color: #B1D7EC;
 }
 
 #best li:nth-child(1) .btn {
