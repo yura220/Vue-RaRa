@@ -1,3 +1,4 @@
+
 #side {
   position: fixed;
   width: 72px;
@@ -78,4 +79,26 @@
   height: 50px;
   background-color: #B1D7EC;
   border-radius: 50%;
+}
+
+/* 이벤트 테마일 때 사이드바 전체 배경 */
+#side.event {
+  background-color: #F9BA10;
+}
+
+/* 이벤트일 때 로고 스타일 (선택사항) */
+#side.event .logo {
+  /* transform: scale(1.05);
+  transition: transform 0.1s ease; */
+}
+
+/* 이벤트 페이지 전용 아이콘 이미지 */
+.s-icon1.event-icon { background-image: url('/img/event-sunny.png'); }
+.s-icon2.event-icon { background-image: url('/img/event-cloudy.png'); }
+.s-icon3.event-icon { background-image: url('/img/event-rainy.png'); }
+.s-icon4.event-icon { background-image: url('/img/event-snowy.png'); }
+.s-icon5.event-icon { background-image: url('/img/event-best.png'); }
+
+#side.event .side-icon a {
+  background-color: #29328D;
 }

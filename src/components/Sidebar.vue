@@ -1,8 +1,18 @@
 <script setup>
 import './css/sidebar.css'
-import { useRoute } from 'vue-router';
+import { ref, computed, watch } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 
-const route = useRoute();
+const route = useRoute()
+const router = useRouter()
+
+const currentPath = ref(route.path)
+
+watch(route, () => {
+  currentPath.value = route.path
+})
+
+const isEventPage = computed(() => currentPath.value === '/event')
 
 const icons = [
   { type: 'sunny', label: '맑음', iconClass: 's-icon1', path: '/sunny' },
@@ -10,7 +20,7 @@ const icons = [
   { type: 'rainy', label: '비', iconClass: 's-icon3', path: '/rainy' },
   { type: 'snowy', label: '눈', iconClass: 's-icon4', path: '/snowy' },
   { type: 'best', label: '추천상품', iconClass: 's-icon5', path: '/best' }
-];
+]
 
 function isActive(icon) {
   // weatherType 기반 경로
@@ -22,17 +32,22 @@ function isActive(icon) {
 </script>
 
 <template>
-  <div id="side">
+  <div id="side" :class="{ event: isEventPage }">
     <div class="flex">
       <router-link to="/">
-        <img src="/img/wlogo.png" alt="로고" class="logo" />
+        <!-- 이벤트일 때 로고 이미지 변경 -->
+        <img
+          :src="isEventPage ? '/img/event-logo.png' : '/img/wlogo.png'"
+          alt="로고"
+          class="logo"
+        />
       </router-link>
       <ul class="side-icon">
-        <li v-for="icon in icons" :key="icon.type">
+        <li v-for="icon in icons" :key="icon.type" @click="currentPath = icon.path">
           <router-link :to="icon.path" :aria-label="icon.label">
             <i
               class="s-icon"
-              :class="[icon.iconClass, isActive(icon) ? 'active' : '']"
+              :class="[icon.iconClass, isActive(icon) ? 'active' : '', isEventPage ? 'event-icon' : '']"
               aria-hidden="true"
             ></i>
           </router-link>

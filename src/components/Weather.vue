@@ -8,16 +8,44 @@ const router = useRouter();
 const tiles = [
   { 
     type: 'sunny',
-    image: '/assets/sunny.svg', 
+    image: '/img/sunny-weather.png', 
     title: '맑음',
-    description: '햇살 좋은 날이에요 ☀️',
+    description: ['맑은 날, 산뜻함을 더해줄', '추천템 확인하기'],
     clickable: true
-    },
-  { type: 'cloudy', image: 'https://placehold.co/340x340?text=cloudy', clickable: true },
-  { type: 'rainy', image: 'https://placehold.co/340x340?text=rainy', clickable: true },
-  { type: 'snowy', image: 'https://placehold.co/340x340?text=snowy', clickable: true },
-  { type: 'empty', image: 'https://placehold.co/340x340?text=empty', clickable: true },
-  { type: 'event', image: 'https://placehold.co/340x340?text=event', clickable: true },
+  },
+  { 
+    type: 'cloudy', 
+    image: '/img/cloudy-weather.png', 
+    title: '흐림',
+    description: ['흐린 날, 기분 전환해줄', '추천템 확인하기'],
+    clickable: true
+  },
+  { 
+    type: 'rainy', 
+    image: '/img/rainy-weather.png', 
+    title: '비',
+    description: ['습기와 꿉꿉함을 날려줄', '추천템 확인하기'],
+    clickable: true
+  },
+  { 
+    type: 'snowy', 
+    image: '/img/snowy-weather.png', 
+    title: '눈',
+    description: ['새하얀 눈과 어울리는', '추천템 확인하기'],
+    clickable: true
+  },
+  { 
+    type: 'empty', 
+    image: '/img/empty-weather.png', 
+    clickable: true
+  },
+  { 
+    type: 'event', 
+    image: '/img/event-weather.png', 
+    title: '이벤트',
+    description: ['(무드앤)의 이벤트 소식', '확인하러 가기'],
+    clickable: true
+  },
 ];
 
 function goToWeather(type) {
@@ -61,7 +89,8 @@ const calendarMarks = ref([
           <img :src="tile.image" :alt="tile.title" class="tile-img" />
           <div class="tile-content">
             <h2 class="tile-title">{{ tile.title }}</h2>
-            <p class="tile-desc">{{ tile.description }}</p>
+           <p><span v-for="(line, idx) in tile.description" :key="idx">{{ line }}<br /></span></p>
+
           </div>
         </div>
         <div class="calendar">

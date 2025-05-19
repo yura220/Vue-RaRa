@@ -14,9 +14,18 @@
 
 #header .router-link-active img {}
 
-#header .nav-right {}
+#header .nav-right {
+  margin-top: 15px;
+  display: flex;
+  justify-content: stretch;
+  gap: 50px;
+  margin-right: 120px;
+}
 
-#header .nav-right img {}
+#header .nav-right img {
+  width: 23px;
+  height: 23px;
+}
 
 #header .nav-right img:nth-child(1) {}
 
