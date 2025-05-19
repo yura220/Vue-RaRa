@@ -28,46 +28,34 @@ function handleClose() {
   }
   showPopup.value = false;
 }
+
+function scrollToSection() {
+  const section = document.querySelector('.weather');
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+}
 </script>
 
 <template>
-  <Popup v-if="showPopup" @close="showPopup = false">
-    <div class="event-popup">
-      <p>Your Daily Forecast for Feel-Good Finds.</p>
-      <h2>당신을 위한 오늘의 기분 좋은 쇼핑 예보.</h2>
-      <div class="event-click" @click="goToEvent">
-        <p>오늘은 당신만의 색을 입는 날이에요. 밝게 빛나봐요!”</p>
-        <h3>전 상품 할인 쿠폰 2000원 할인 🎁</h3>
-      </div>
+  <Popup v-if="showPopup" @close="handleClose" :dont-show-again.sync="dontShowAgain" />
+
+  <div class="title">
+    <div class="title-img">
+</div>
+
+    <div class="title-text">
+      <h1>날씨에 맞는 당신의 스타일<br>지금 확인해보세요</h1>
+      <p>오늘 날씨를 선택하고<br>스타일을 추천 받아보세요</p>
     </div>
 
-    <label style="display: flex; align-items: center; margin-top: 1rem;">
-      <input type="checkbox" v-model="dontShowAgain" />
-      <span style="margin-left: 0.5rem;">오늘 하루 이 창 열지 않기</span>
-    </label>
-
-    <button class="close-btn" @click="handleClose">닫기</button>
-  </Popup>
-  <main id="title">
-    <div class="title-wrap">
-      <div class="title-img">
-        <img src="https://placehold.co/1920x800?text=title" alt="홈 타이틀 이미지" />
-      </div>
-      <div class="title-text">
-        <h2>오늘 날씨에 맞는</h2>
-        <p>쇼핑 큐레이션과 추천을 만나보세요!</p>
-      </div>
+    <div class="scroll-button" @click="scrollToSection">
+      <span>scroll</span>
+      <span>▼</span>
     </div>
-  </main>
+  </div>
 
-  <Weather />
-  <BottomButton />
+  <div class="weather">
+    <Weather />
+  </div>
 </template>
-<style scoped>
-.event-click {
-  background: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-</style>

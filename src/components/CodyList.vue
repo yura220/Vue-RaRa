@@ -125,8 +125,7 @@ function goBackOrHome() {
 
         <div class="cody-right" :class="['page', weatherType]">
           <h3 class="a-title">날씨 따라 즐기는 하루</h3>
-          <ul class="a-lists">
-            <li v-for="(a, i) in weatherData.activities" :key="i" class="a-list">
+          <ul class="a-lists">           <li v-for="(a, i) in weatherData.activities" :key="i" class="a-list">
             <h4>{{ a.title }}</h4>
             <p>{{ a.desc }}</p>
             </li>

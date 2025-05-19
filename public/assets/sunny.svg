@@ -1,0 +1,16 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+     viewBox="0 0 342 342" xml:space="preserve">
+  <defs>
+    <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse"
+                    x1="-91.0551" y1="430.4267" x2="-91.0551" y2="88.4267"
+                    gradientTransform="matrix(1 0 0 -1 262.0551 430.4267)">
+      <stop offset="0.3" style="stop-color:#FFBF34"/>
+      <stop offset="1" style="stop-color:#FFBF34;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <path shape-rendering="crispEdges"
+        fill="url(#SVGID_1_)"
+        d="M12,0h318c6.6,0,12,5.4,12,12v318c0,6.6-5.4,12-12,12H12c-6.6,0-12-5.4-12-12V12
+        C0,5.4,5.4,0,12,0z"/>
+</svg>
