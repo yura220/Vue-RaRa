@@ -3,7 +3,6 @@ import './css/main.css'
 </script>
 
 <template>
-
 <footer id="footer">
     <div class="wrap">
 <!-- 왼쪽 로고 -->
@@ -31,4 +30,3 @@ import './css/main.css'
     </div>
 </footer>
 </template>
-

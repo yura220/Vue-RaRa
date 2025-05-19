@@ -1,6 +1,6 @@
 <script setup>
 import './css/event.css'
-// import Scratch from './Scratch.vue';
+import Scratch from './Scratch.vue';
 </script>
 
 <template>

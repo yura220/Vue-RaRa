@@ -61,4 +61,5 @@ function scrollToSection() {
   <div class="weather">
     <Weather />
   </div>
+  <BottomButton />
 </template>
