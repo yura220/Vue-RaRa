@@ -53,11 +53,13 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   border-radius: 15px;
-  right: 0;
+  right: 30px;
   z-index: 2;
-  bottom: 0;
+  bottom: 30px;
   justify-content: center;
   align-items: center;
+  z-index: 300;
+  filter: drop-shadow(0 3px 3px rgba(0,0,0,0.2));
 }
 
 .scratch-container h2 {

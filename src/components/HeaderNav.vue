@@ -6,9 +6,9 @@ import './css/header.css'
   <header id="header">
     <div class="wrap flex">
       <div class="nav-right">
-        <img src="https://placehold.co/40x40" alt="유저 아이콘" class="icon" />
-        <img src="https://placehold.co/40x40" alt="메뉴 아이콘" class="icon" />
-        <img src="https://placehold.co/40x40" alt="햄버거" class="icon">
+        <img src="/img/my.png" alt="유저 아이콘" class="icon" />
+        <img src="/img/bag.png" alt="장바구니" class="icon" />
+        <img src="/img/hamburger.png" alt="햄버거 아이콘" class="icon">
       </div>
     </div>
   </header>

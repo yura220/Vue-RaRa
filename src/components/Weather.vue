@@ -58,30 +58,23 @@ const calendarMarks = ref([
           class="tile"
           @click="goToWeather(tile.type)"
         >
-          <img :src="tile.image" :alt="tile.title" class="tile-img" />
+          <div class="tile-box">
+            <img :src="tile.image" :alt="tile.title" class="tile-img" />
+          </div>
           <div class="tile-content">
             <h2 class="tile-title">{{ tile.title }}</h2>
             <p class="tile-desc">{{ tile.description }}</p>
           </div>
         </div>
-        <div class="calendar">
+        <div class="calendar-box">
         <Calendar
     mode="month"
     is-expanded
     :attributes="calendarMarks"
-    style="transform: scale(1.26) translate(-25px, -30px); transform-origin: top left;"
+    style="width: 342px; height: 342px;"
       />
         </div>
       </div>
     </div>
   </section>
 </template>
-
-<style scoped>
-.calendar {
-  max-width: 350px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
-
-</style>

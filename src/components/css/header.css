@@ -2,7 +2,7 @@
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 100;
+  z-index: 800;
 }
 
 #header .wrap {
@@ -14,9 +14,18 @@
 
 #header .router-link-active img {}
 
-#header .nav-right {}
+#header .nav-right {
+  display: flex;
+  gap: 40px;
+  height: 70px;
+  align-items: center;
+}
 
-#header .nav-right img {}
+#header .nav-right img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
 
 #header .nav-right img:nth-child(1) {}
 

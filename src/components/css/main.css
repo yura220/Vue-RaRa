@@ -1,17 +1,25 @@
 .title {
   width: 100%;
   height: 100vh;
+  min-height: 750px;
   background-color: #dff5ff;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
-
+.t-img-box{
+  width: 1440px;
+  height: 720px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .title-img {
-  width: 90%;
-  max-width: 1200px;
-  height: 600px;
+  width: 100%;
+  max-width: 1440px;
+  height: 720px;
   background-image: url(/img/title.jpg);
   background-size: cover;
   background-position: center;
@@ -54,8 +62,8 @@ margin-top: 10px;
 /* ✅ 스크롤 버튼 */
 .scroll-button {
   position: absolute;
-  bottom: 18%;
-  right: 21%;
+  bottom: 50px;
+  right: 70px;
   background: #dde5ee;
   border-radius: 50%;
   width: 85px;
@@ -78,8 +86,9 @@ margin-top: 10px;
 
 }
 
-#weather {
 
+#weather {
+  background-color: #dff5ff;
 }
 
 #weather .wrap {
@@ -89,28 +98,37 @@ margin-top: 10px;
 
 #weather .w-grid {
   display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-template-rows: repeat(2, auto);
-  grid-gap: 10px;
+  grid-template-columns: repeat(4, 342px);
+  grid-template-rows: repeat(2, 342px);
+  grid-gap: 24px;
   justify-content: center;
   align-items: center;
   height: 90%;
-  padding: 30px;
+  width: 100%;
   margin-top: 80px;
 }
 
 #weather .w-grid .tile-text {
   grid-column: 1;
   grid-row: 1;
-  width: 340px;
-  height: 345px;
+  width: 342px;
+  height: 342px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  grid-gap: 24px;
   padding: 40px;
 }
+#weather .tile-box{
+  width: 342px;
+  height: 342px;
+  border-radius: 12px;
+  overflow: hidden;
+  filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+}
 #weather .tile {
- position: relative;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 #weather .tile-content{
   position: absolute;
@@ -135,8 +153,8 @@ margin-top: 10px;
 }
 
 #weather .w-grid .tile:nth-of-type(2) img {
- width: 340px;
- height: 340px;
+  width: 342px;
+  height: 342px;
 }
 
 #weather .w-grid .tile:nth-of-type(2) h2 {
@@ -182,4 +200,20 @@ font-weight: 600;
 #weather .w-grid .calendar {
   grid-column: 4;
   grid-row: 1;
+}
+/* 달력 */
+
+.calendar-box {
+  margin: 0 auto;
+  filter: drop-shadow(0 4px 4px rgba(0,0,0,0.1));
+}
+.vc-container{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vc-pane-container {
+width: 90%;
+height: 90%;
 }

@@ -5,7 +5,7 @@
   background-color: #FFF9CE;
   top: 0;
   left: 0;
-  z-index: 200;
+  z-index: 999;
 }
 
 #side .flex {
