@@ -1,6 +1,11 @@
-/* 구글폰트 */
+/* 나눔스퀘어라운드폰트 */
+/* font-family: 'NanumSquareRoundLight';
+font-family: 'NanumSquareRound';
+font-family: 'NanumSquareRoundBold';
+font-family: 'NanumSquareRoundExtraBold'; */
+
 body {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'NanumSquareRoundBold';
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
