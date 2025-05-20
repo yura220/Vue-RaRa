@@ -125,8 +125,8 @@ onMounted(() => {
   const dpr = window.devicePixelRatio || 1;
   c.width = 550 * dpr;
   c.height = 100 * dpr;
-  c.style.width = '550px';
-  c.style.height = '100px';
+  c.style.width = '600px';
+  c.style.height = '120px';
 
   ctx = c.getContext('2d');
   if (!ctx) return;
@@ -139,7 +139,7 @@ onMounted(() => {
   gradient.addColorStop(0.5, '#ccc');
   gradient.addColorStop(1, '#555');
   ctx.fillStyle = gradient;
-  ctx.fillRect(0, 0, 550, 100);
+  ctx.fillRect(0, 0, 600, 120);
 
   ctx.save();
   ctx.translate(260, 50);
@@ -175,6 +175,14 @@ onMounted(() => {
   align-items: center;
   justify-content: center;
   position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 37px;
+  left: 0;
 }
 
 /* 체크 테두리 감싸는 div */
@@ -188,8 +196,8 @@ onMounted(() => {
 
 .scratch-box {
   background-color: #FFD767FC;
-  width: 680px;
-  height: 280px;
+  width: 800px;
+  height: 320px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -222,11 +230,11 @@ onMounted(() => {
   background: #FF5B79;
   border-radius: 30px;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 25px;
   color: #ffffff;
   margin-top: 13px;
   height: 43px;
-  width: 330px;
+  width: 360px;
   text-align: center;
   padding-top: 4px;
   text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.31);
@@ -261,21 +269,21 @@ onMounted(() => {
 font-weight: 700;
 color: #333232;
 margin-top: 8px;
-font-size: 17px;
+font-size: 18px;
 }
 /* 새로운 영역: 캔버스와 컨텐츠 겹치게 */
 .scratch-area {
   position: relative;
-  width: 550px;
-  height: 100px;
+  width: 600px;
+  height: 120px;
   margin: 20px 0 10px 0;
   transform: translateY(-6px);
 }
 
 /* 긁기 캔버스 */
 canvas {
-  width: 550px;
-  height: 100px;
+  width: 600px;
+  height: 120px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -302,8 +310,8 @@ canvas.cleared {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 550px;
-  height: 100px;
+  width: 600px;
+  height: 120px;
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -318,7 +326,7 @@ canvas.cleared {
 
 .content h3 {
   order: 2;
-  font-size: 20px;
+  font-size: 26px;
   margin-top: 10px;
   color: #37618c;
   font-weight: 800;
@@ -326,7 +334,7 @@ canvas.cleared {
 
 .content p {
   order: 1;
-  font-size: 15px;
+  font-size: 17px;
   margin-top: 0;
   color: #636970;
   font-weight: 800;
