@@ -45,8 +45,7 @@ function scrollToSection() {
       <div class="title-img">
       </div>
       <div class="scroll-button" @click="scrollToSection">
-          <span>scroll</span>
-          <span>▼</span>
+          <span class="scroll">scroll</span>
         </div>
     </div>
   </div>

@@ -32,8 +32,8 @@ onMounted(() => {
     <button class="close-btn" @click="handleClose">
       <span class="icon">×</span>
     </button>
-    <h2>당신을 위한 오늘의 기분 좋은 쇼핑 예보.</h2>
     <p>Your Daily Forecast for Feel-Good Finds.</p>
+    <h2>당신을 위한 오늘의 기분 좋은 쇼핑 예보.</h2>
     <a href="#" class="scratch-box more-btn" @click.prevent="handleMore">
       더보기
     </a>
@@ -67,14 +67,14 @@ onMounted(() => {
   font-size: 15px;
   font-weight: 800;
   color: #464e55;
-  margin-top: 20px;
+  margin: 4px 0 17px;
 }
 
 .scratch-container p {
   font-size: 13px;
   font-weight: 800;
   color: #5d6871;
-  margin: 4px 0 17px;
+  margin-top: 20px;
 }
 
 .scratch-box.more-btn {

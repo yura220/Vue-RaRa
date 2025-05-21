@@ -98,9 +98,8 @@ export const bestMap = {
       desc: '현대적인 디자인과 우아한 디테일로, 세련된 여성들을 위한 핸드백',
       colors: [
         { id: 1, name: 'White', colorCode:'#F5F5F5', image: '/img/best_bag-1.jpg' },
-        { id: 2, image: '/img/best_bag-2.jpg' },
-        { id: 3, image: '/img/best_bag-3.jpg' },
-        // { id: 4, name: 'Green', colorCode:'#d7e7d0', image: '/img/look1-4.png' }
+        { id: 2, name: 'White', image: '/img/best_bag-2.jpg' },
+        { id: 3, name: 'White', image: '/img/best_bag-3.jpg' },
       ],
     },
     related: [

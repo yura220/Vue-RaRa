@@ -43,7 +43,7 @@ const tiles = [
     type: 'event',
     image: '/img/bg_event.png',
     title: '이벤트',
-    description: ['(무드앤)의 이벤트 소식', '확인하러 가기'],
+    description: ['라라쇼핑몰의 이벤트 소식', '확인하러 가기'],
     clickable: true
   },
 ];

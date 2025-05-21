@@ -1,14 +1,13 @@
 /* 나눔스퀘어라운드폰트 */
-/* font-family: 'NanumSquareRoundLight';
-font-family: 'NanumSquareRound';
-font-family: 'NanumSquareRoundBold';
-font-family: 'NanumSquareRoundExtraBold'; */
 
-body {
-  font-family: 'NanumSquareRoundBold';
-  font-optical-sizing: auto;
-  font-weight: normal;
-  font-style: normal;
+html,body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
 }
 
 a,
