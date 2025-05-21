@@ -183,7 +183,7 @@ function goBackOrHome() {
             </div>
           </div>
         </div>
-        <div class="side"></div>
+        <div class="side" :style="{ backgroundImage: `url(/img/side-${weatherType}.jpg)` }"></div>
       </div>
     </div>
   </section>
