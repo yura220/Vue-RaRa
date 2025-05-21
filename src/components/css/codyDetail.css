@@ -123,6 +123,8 @@
   position: sticky;
   top: 0;
   background-color: aqua;
-  background-image: url(https://placehold.co/640x950/orange/white);
+  background-image: url(/img/sunny5.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
   justify-self: end;
 }

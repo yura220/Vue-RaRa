@@ -128,9 +128,7 @@ function goBackOrHome() {
       <div class="b-box">
         <ul>
           <li v-for="key in Object.keys(bestMap)" :key="key">
-            <a href="#" class="btn" @click.prevent="openPopup(key)">
-              +
-            </a>
+            <a href="#" class="btn" @click.prevent="openPopup(key)"></a>
           </li>
         </ul>
         <div class="p-wrap" v-if="showPopup" @click.self="closePopup">
