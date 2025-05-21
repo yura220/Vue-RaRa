@@ -70,8 +70,15 @@
   padding: 10px 0;
 }
 
-#detail .d-thumb {
+#detail .d-thumb-box{
+  width: 85px;
+  height: 85px;
+  overflow: hidden;
   border-radius: 8px;
+}
+
+#detail .d-thumb {
+  width: 100%;
   cursor: pointer;
 }
 

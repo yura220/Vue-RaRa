@@ -15,6 +15,7 @@ const weatherData = weatherMap[weatherType];
 
 const codys = weatherData.cody;
 const items = weatherData.items;
+const items2 = weatherData.items2;
 const select = weatherData.select?.[0]?.image
 const detailImages = weatherData.detail || [];
 
@@ -34,7 +35,17 @@ onMounted(() => {
 const groupedItems = computed(() => {
   const groups = []
   for (let i = 0; i < itemList.value.length; i += 2) {
-    groups.push(itemList.value.slice(i, i + 2))
+    groups.push(items.value.slice(i, i + 2))
+  }
+  return groups
+})
+
+const slide = weatherData.slide;
+
+const groupedSlide = computed(() => {
+  const groups = []
+  for (let i = 0; i < slide.length; i += 2) {
+    groups.push(slide.slice(i, i + 2))
   }
   return groups
 })
@@ -116,7 +127,9 @@ function goBackOrHome() {
               :key="select.id"
               class="s-card"
             >
-              <img :src="select.image" alt="" class="s-image" />
+              <div class="c-img-box">
+                <img :src="select.image" alt="" class="c-image" />
+              </div>
               <p class="cody-desc">{{ select.desc }}</p>
             </div>
           </div>
@@ -154,8 +167,9 @@ function goBackOrHome() {
                   :key="item.id"
                   class="d-list"
                 >
-
-                  <img :src="item.image" :alt="item.brand + ' 제품 이미지'" class="d-thumb" />
+                  <div class="d-thumb-box">
+                    <img :src="item.image" :alt="item.brand + ' 제품 이미지'" class="d-thumb" />
+                  </div>
                   <div class="d-text">
                     <strong>{{ item.brand }}</strong>
                     <p>{{ item.desc }}</p>
@@ -192,14 +206,20 @@ function goBackOrHome() {
             autoplay: false,  // 자동 넘김 비활성화
           }"
         aria-label="추천 아이템 슬라이더">
-          <SplideSlide v-for="(group, i) in groupedItems" :key="i">
+          <SplideSlide v-for="(group, i) in groupedSlide" :key="i">
             <div class="vertical-group">
-              <div v-for="item in group" :key="item.id" class="i-card">
-                <img :src="item.image" class="i-thumb" :alt="item.brand + ' 제품 이미지'" />
+              <div v-for="slide in group" :key="slide.id" class="i-card">
+                <div class="i-thumb-box">
+                  <img :src="slide.image" class="i-thumb" :alt="slide.brand + ' 제품 이미지'" />
+                </div>
                 <div class="i-info">
-                  <strong>{{ item.brand }}</strong>
-                  <p>{{ item.desc }}</p>
-                  <p>{{ item.price }}</p>
+                  <strong>{{ slide.brand }}</strong>
+                  <p>{{ slide.desc }}</p>
+                  <p>{{ slide.price }}</p>
+                  <div class="i-dot">
+                      <span class="color-dot" :style="{ backgroundColor: slide.colorCode }"></span>
+                      <p>Color : {{ slide.color }}</p>
+                    </div>
                   <span>
                     <button>구매하기</button>
                     <button>장바구니</button>
