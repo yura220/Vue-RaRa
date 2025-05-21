@@ -33,3 +33,7 @@
 #header .nav-right img:nth-child(2) {}
 
 #header .nav-right img:nth-child(3) {}
+
+.event-header {
+  background-color: #F15723;
+}
