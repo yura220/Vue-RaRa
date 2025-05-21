@@ -82,7 +82,7 @@ export const weatherMap = {
         title: '스트릿',
         tag: '#스트릿패션',
         image: '/img/sunny01.png',
-        desc: '화창한 날\n입기 좋은 후드티\nTOP 3'
+        desc: '햇살 가득\n선글라스로 완성\n도시 감성'
       },
       {
         id: 2,
@@ -90,7 +90,7 @@ export const weatherMap = {
         title: '레인룩',
         tag: '#완벽방수',
         image: '/img/sunny02.png',
-        desc: '꿀꿀한 날,\n액세서리로\n기분 전환하기'
+        desc: '편하게 입고\n가볍게 걷는\n오늘의 거리'
       },
       {
         id: 3,
@@ -98,7 +98,7 @@ export const weatherMap = {
         title: '레인 스타일일',
         tag: '#Y2K',
         image: '/img/sunny03.png',
-        desc: '칙칙한 날,\n스트라이프 패턴으로\n포인트 주기'
+        desc: '따뜻한 톤\n트위드 하나로\n분위기 전환'
       }
     ],
 
@@ -134,10 +134,10 @@ export const weatherMap = {
 ]
 ,
     activities: [
-      { id: 1, title: '헤어 커트나 염색하기', desc:'흐린 날, 헤어 스타일 변신으로 기분 전환!' },
-      { id: 2, title: '빈티지 샵 탐방하기', desc:'흐린 날의 감성을 살려 레트로 룩 도전!'  },
-      { id: 3, title: '스트릿 패션 사진 기록하기', desc:'부드러운 조명을 활용해 OOTD 기록하기'  },
-      { id: 4, title: '패션 영화 감상', desc:'차 한 잔과 함께 흐린 날의 차분한 분위기 즐기기'  }
+      { id: 1, title: '햇살 좋은 루프탑 카페', desc:'도심 속 하늘 아래에서 여유 한 잔' },
+      { id: 2, title: '감성 거리 사진 찍기', desc:'순간을 남기기 딱 좋은 날씨'  },
+      { id: 3, title: '창가에 앉아 책 한 권', desc:'따뜻한 햇살과 함께하는 집중의 시간'  },
+      { id: 4, title: '오늘의 OOTD 기록하기', desc:'자연광 아래에서 가장 예쁜 나'  }
     ],
     detail: [
       {
