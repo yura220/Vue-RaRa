@@ -113,7 +113,6 @@ function goBackOrHome() {
     router.push('/')
   }
 }
-
 </script>
 
 <template>
@@ -183,7 +182,8 @@ function goBackOrHome() {
             </div>
           </div>
         </div>
-        <div class="side">    </div>
+        <div class="side"></div>
+
       </div>
     </div>
   </section>
