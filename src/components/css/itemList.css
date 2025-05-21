@@ -40,9 +40,15 @@
   gap: 50px;
 }
 
-#item .i-thumb {
+#item .i-thumb-box {
   width: 220px;
   height: 207px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+#item .i-thumb {
+  width: 100%;
 }
 
 #item .i-info {
@@ -70,11 +76,25 @@
 
 #item .i-info p:nth-child(4) {}
 
-#item .i-info div {
-  align-self: end;
+#item .i-info div {}
+
+#item .i-dot {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
 }
 
-#item .i-info .buy {}
+#item .color-dot {
+  display: block;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+
+#item .i-dot p {
+  font-size: 14px !important;
+}
 
 #item button {
   border: none;

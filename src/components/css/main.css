@@ -234,33 +234,35 @@ height: 90%;
 }
 
 /* footer */
-.footer {
+#footer {
   width: 100%;
   height: 100%;
   background-color: #FFF9CE;
   padding: 10px;
 }
 
-.footer .wrap {
+#footer .wrap {
   display: flex;
   justify-content: space-between;
   align-items: unset;
   max-width: 1700px;
 }
 
-.footer .footer-left {
+#footer .footer-left {
 }
 
-.footer .footer-left .logo {
+#footer .footer-left .logo {
+  width: 100px;
 }
 
-.footer .footer-center {
+#footer .footer-center {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
-.footer .footer-center .site-name {
+#footer .footer-center .site-name {
   font-size: 25px;
   letter-spacing: 2px;
 }
