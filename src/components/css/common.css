@@ -20,7 +20,7 @@ li {
 /* 레이아웃 스타일링  */
 section {
   height: 90vh;
-  min-height: 800px;
+  min-height: 900px;
 }
 
 .wrap {
