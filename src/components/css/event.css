@@ -1,0 +1,20 @@
+#event {}
+
+#event .wrap {}
+
+#event h1 {}
+
+.event-page #footer {
+  background-color: #29328D;
+  /* 원하는 색으로 변경 */
+}
+
+.event-page #footer .footer-center p {
+  color: #F9BA10;
+}
+
+/* 모바일 */
+@media (max-width: 480px) {}
+
+/* 태블릿 */
+@media (max-width: 768px) {}
