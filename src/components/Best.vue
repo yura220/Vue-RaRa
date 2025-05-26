@@ -183,11 +183,7 @@ function goBackOrHome() {
                     </div>
                   </div>
                 </div>
-<<<<<<< HEAD
                 <!-- 관련 상품 텍스트 정보 -->
-=======
-
->>>>>>> origin/sub2
                 <div class="p-bottom">
                   <div class="r-items">
                     <div
