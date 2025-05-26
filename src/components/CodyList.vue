@@ -163,9 +163,7 @@ function goTo(path) {
               <p class="cody-desc">{{ select.desc }}</p>
             </div>
           </div>
-
         </div>
-
         <div class="cody-right" :class="['page', 'theme', weatherType]">
           <h3 class="a-title">날씨 따라 즐기는 하루</h3>
           <ul class="a-lists">

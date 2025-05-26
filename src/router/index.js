@@ -1,15 +1,19 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from '../components/Home.vue';
-import CodyList from '../components/CodyList.vue';
-import Event from '../components/Event.vue';
-import Best from '../components/Best.vue';
-
+import Home from '@/components/Home.vue';
+import Event from '@/components/Event.vue';
+import Best from '@/components/Best.vue';
+import Cody from '@/components/Cody.vue';
+import Bestpage from '@/components/BestPage.vue'
 
 const routes = [
   //  아이템 상세 뷰
   {
     path: '/:weatherType(rainy|sunny|cloudy|snowy)',
-    component: CodyList,
+    component: Cody,
+  },
+  {
+    path: '/best/:bestType(top|bottom|shoes|bag|Accessories)',
+    component: Bestpage,
   },
   {
     path: '/event',

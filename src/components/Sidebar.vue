@@ -34,6 +34,12 @@ function isActive(icon) {
   const pathExact = route.path === icon.path
   return pathMatch || pathExact
 }
+//햄버거 토글 ----------------------------------------------------------------
+const menuOpen = ref(false)
+
+function toggleMenu() {
+  menuOpen.value = !menuOpen.value
+}
 </script>
 
 <template>
@@ -47,17 +53,40 @@ function isActive(icon) {
           class="logo"
         />
       </router-link>
-      <ul class="side-icon" :style="{ display: isMobile && !isSideOpen ? 'none' : '' }">
-        <li v-for="icon in icons" :key="icon.type" @click="currentPath = icon.path" v-if="!isMobile || isSideOpen">
-          <router-link :to="icon.path" :aria-label="icon.label">
-            <i
-              class="s-icon"
-              :class="[icon.iconClass, isActive(icon) ? 'active' : '', isEventPage ? 'event-icon' : '']"
-              aria-hidden="true"
-            ></i>
-          </router-link>
-        </li>
-      </ul>
+      <ul class="side-icon">
+  <!-- 펼쳐지는 아이콘들 -->
+  <li>
+    <div class="icon-container" :class="{ open: menuOpen }">
+      <div
+        v-for="icon in icons"
+        :key="icon.type"
+        class="icon-box"
+      >
+        <router-link :to="icon.path" :aria-label="icon.label">
+          <i
+            class="s-icon"
+            :class="[icon.iconClass, isActive(icon) ? 'active' : '', isEventPage ? 'event-icon' : '']"
+            aria-hidden="true"
+          ></i>
+        </router-link>
+      </div>
+    </div>
+  </li>
+
+  <!-- 햄버거 버튼 (마지막에 둠) -->
+  <li>
+    <div
+    class="hamburger-btn"
+    role="button"
+    tabindex="0"
+    aria-label="메뉴 열기"
+    @click="toggleMenu"
+  >
+    <i class="s-icon hamburger"></i>
+  </div>
+  </li>
+</ul>
+
     </div>
   </div>
 </template>

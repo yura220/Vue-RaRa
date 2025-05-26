@@ -1,0 +1,122 @@
+#bestM{}
+
+#bestM .m-wrap{}
+
+#bestM .m-wrap h2{
+  margin-top: 80px;
+  font-size: 16px;
+  text-align: center;
+}
+
+#bestM .b-box{
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+#bestM .b-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+#bestM ul{}
+
+#bestM li{}
+
+#bestM li a{}
+
+#bestP{
+  width: 100%;
+  height: 100%;
+}
+
+#bestP .m-wrap{}
+
+#bestP .main-img {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  margin-top: 80px;
+}
+
+#bestP .main-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#bestP .p-top {
+}
+
+#bestP h3 {
+}
+
+#bestP p {
+}
+
+#bestP .p-dot {
+}
+
+#bestP .color-dot {
+}
+
+#bestP .active-color {
+}
+
+#bestP .m-desc {
+}
+
+#bestP .c-btns {
+}
+
+#bestP .c-btn {
+}
+
+#bestP .c-btn1 {
+}
+
+#bestP .c-btn2 {
+}
+
+.bestB {
+}
+
+.bestB .c-thumbs {
+}
+
+.bestB .thumb-block {
+}
+
+.bestB .thumb-block .thumb {
+}
+
+.bestB .p-bottom {
+}
+
+.bestB .r-items {
+}
+
+.bestB .r-info {
+}
+
+.bestB .r-box {
+}
+
+.bestB .r-box img {
+}
+
+.bestB .r-btns {
+}
+
+.bestB .c-btn {
+}
+
+.bestB .c-btn1 {
+}
+
+.bestB .c-btn2 {
+}
+

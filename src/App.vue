@@ -3,7 +3,7 @@ import Sidebar from './components/Sidebar.vue'
 import HeaderNav from './components/HeaderNav.vue'
 import Footer from './components/Footer.vue'
 
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { ref, onMounted, onBeforeUnmount, computed } from 'vue'
 
 const isSideOpen = ref(false)
 const isMobile = ref(window.innerWidth <= 767)

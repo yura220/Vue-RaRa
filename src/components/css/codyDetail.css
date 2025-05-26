@@ -127,9 +127,3 @@
   background-size: 100%;
   justify-self: end;
 }
-
-/* 모바일 */
-@media (max-width: 480px) {}
-
-/* 태블릿 */
-@media (max-width: 768px) {}

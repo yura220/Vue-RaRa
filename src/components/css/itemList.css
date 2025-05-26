@@ -145,9 +145,3 @@
   gap: 24px;
   align-items: center;
 }
-
-/* 모바일 */
-@media (max-width: 480px) {}
-
-/* 태블릿 */
-@media (max-width: 768px) {}
