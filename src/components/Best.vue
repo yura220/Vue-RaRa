@@ -4,6 +4,7 @@ import { useRouter } from 'vue-router'
 import {bestMap} from './js/bestDataMap.js'
 import { ref, computed, nextTick, watch } from 'vue'
 
+const base = import.meta.env.BASE_URL
 const showPopup = ref(false)
 const selectedIndex = ref(null)
 
@@ -25,7 +26,6 @@ function getEventY(e) {
 }
 
 const activeImage = ref('') // 현재 크게 보여줄 이미지
-
 watch(selectedIndex, (newIndex) => {
   const item = bestMap[newIndex]
   if (item && item.main?.colors?.length > 0) {
@@ -52,6 +52,7 @@ function openPopup(index) {
     }
   })
 }
+
 
 // 팝업 드래그 -----------------------------------------------------------------------
 function startDrag(e) {
@@ -182,7 +183,11 @@ function goBackOrHome() {
                     </div>
                   </div>
                 </div>
+<<<<<<< HEAD
                 <!-- 관련 상품 텍스트 정보 -->
+=======
+
+>>>>>>> origin/sub2
                 <div class="p-bottom">
                   <div class="r-items">
                     <div
@@ -203,10 +208,10 @@ function goBackOrHome() {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
+              </div> <!-- p-content -->
+            </div> <!-- p-main -->
+          </div> <!-- p-inner -->
+        </div> <!-- p-wrap -->
       </div>
     </div>
   </section>

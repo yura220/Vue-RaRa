@@ -1,4 +1,4 @@
-/* 나눔스퀘어라운드폰트 */
+/* 구글폰트 */
 
 html,body {
   font-family: 'Noto Sans KR', sans-serif;
@@ -23,7 +23,7 @@ li {
 
 /* 레이아웃 스타일링  */
 section {
-  height: 90vh;
+  height: 100vh;
   min-height: 800px;
 }
 

@@ -89,6 +89,7 @@ color: white;
 .scroll-button:hover {
   transform: translateY(5px);
 }
+
 .scroll-button .scroll {
   font-weight: 800;
   display: flex;
@@ -138,9 +139,34 @@ color: white;
   height: 342px;
   display: flex;
   flex-direction: column;
-  grid-gap: 24px;
-  padding: 40px;
+  grid-gap: 13px;
+  padding: 40px 30px;
 }
+
+#weather .w-grid .tile-text  h2 {
+  font-weight: 600;
+  font-size: 36px;
+  letter-spacing: -3px;
+}
+
+#weather .w-grid .tile-text p {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#weather .w-grid .tile-text p::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url(/img/bell.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 #weather .tile-box{
   width: 342px;
   height: 342px;
@@ -148,6 +174,7 @@ color: white;
   overflow: hidden;
   filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
 }
+
 #weather .tile {
   position: relative;
   width: 100%;
@@ -163,14 +190,20 @@ color: white;
   color: #fff;
 }
 #weather .tile h2 {
-  font-size: 26px;
+  font-size: 36px;
   font-weight: 700;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 #weather .tile p {
-  margin-top: 20px;
+  margin-top: 14px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   font-weight: 600;
+}
+
+#weather .tile h2,
+#weather .w-grid .tile-text h2,
+.title-text h2 {
+  font-family: "Jua", sans-serif;
 }
 
 #weather .w-grid .tile-img {
@@ -222,7 +255,6 @@ color: white;
 
 }
 
-
 #weather .w-grid .tile-text  h2 {
 font-weight: 600;
 }
@@ -255,10 +287,12 @@ height: 90%;
 
 /* footer */
 #footer {
-  width: 100%;
-  height: 100%;
+  width: calc(100% - 72px); /* 사이드바 너비 제외한 전체 */
+  margin-left: 72px;        /* 사이드바 너비만큼 오른쪽으로 이동 */
   background-color: #FFF9CE;
   padding: 10px;
+  position: relative;
+  height: 100%;
 }
 
 #footer .wrap {
@@ -320,7 +354,8 @@ height: 90%;
 
 #footer.event-footer {
   background-color: #29328D;
-  border: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
 }
 
 #footer.event-footer p {

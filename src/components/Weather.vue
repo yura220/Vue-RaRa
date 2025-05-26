@@ -1,9 +1,13 @@
 <script setup>
 import { useRouter } from 'vue-router';
+import { ref } from 'vue'
+import { doc, getDoc, setDoc, updateDoc, increment } from 'firebase/firestore'
+import { db } from '@/firebase'
 import { Calendar } from 'v-calendar';
 import Sidebar from './Sidebar.vue'
 
 const router = useRouter();
+const userId = 'user123';
 
 const tiles = [
   {
@@ -48,14 +52,33 @@ const tiles = [
   },
 ];
 
-function goToWeather(type) {
-  if (type === 'event') {
+async function recordWeatherClick(type) {
+  const statsRef = doc(db, 'userPreferences', 'weatherStats')
+  const favRef = doc(db, 'favorites', userId)
+  const snap = await getDoc(statsRef)
+
+  if (!snap.exists()) {
+    await setDoc(statsRef, { sunny: 0, cloudy: 0, rainy: 0, snowy: 0 })
+  }
+
+  if (['sunny', 'cloudy', 'rainy', 'snowy'].includes(type)) {
+    await updateDoc(statsRef, {
+      [type]: increment(1)
+    })
+    await setDoc(favRef, { favoriteWeather: type }, { merge: true })
+  }
+}
+
+function handleTileClick(type) {
+  recordWeatherClick(type)}
+
+  function goToWeather(type) {
+if (type === 'event') {
     router.push('/event');
   } else {
     router.push(`/${type}`);
   }
 }
-import { ref } from 'vue';
 
 const calendarMarks = ref([
   {
@@ -92,16 +115,15 @@ const calendarMarks = ref([
           <div class="tile-content">
             <h2 class="tile-title">{{ tile.title }}</h2>
             <p><span v-for="(line, idx) in tile.description" :key="idx">{{ line }}<br /></span></p>
-
           </div>
         </div>
         <div class="calendar-box">
-        <Calendar
-    mode="month"
-    is-expanded
-    :attributes="calendarMarks"
-    style="width: 342px; height: 342px;"
-      />
+          <Calendar
+            mode="month"
+            is-expanded
+            :attributes="calendarMarks"
+            style="width: 342px; height: 342px;"
+          />
         </div>
       </div>
     </div>

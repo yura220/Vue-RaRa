@@ -6,6 +6,8 @@ import { RouterLink, useRoute, useRouter } from 'vue-router'
 const route = useRoute()
 const router = useRouter()
 
+// base 경로 자동 처리 (GitHub Pages 대응)
+const base = import.meta.env.BASE_URL
 const currentPath = ref(route.path)
 
 watch(route, () => {

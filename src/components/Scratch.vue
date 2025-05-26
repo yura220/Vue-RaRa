@@ -229,7 +229,7 @@ onMounted(() => {
   background: #FF5B79;
   border-radius: 30px;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 24px;
   color: #ffffff;
   margin-top: 13px;
   height: 43px;
@@ -268,7 +268,7 @@ onMounted(() => {
 font-weight: 700;
 color: #333232;
 margin-top: 8px;
-font-size: 18px;
+font-size: 17px;
 }
 /* 새로운 영역: 캔버스와 컨텐츠 겹치게 */
 .scratch-area {
@@ -368,9 +368,9 @@ canvas.cleared {
 
 .explanation {
   position: absolute;
-  bottom: 11px;
-  font-size: 13px;
-  right: 85px;
+  bottom: 15px;
+  font-size: 12px;
+  right: 145px;
   background-color: #fff;
   width: 230px;
   text-align: center;

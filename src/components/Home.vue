@@ -55,8 +55,6 @@ function scrollToSection() {
       <p>오늘 날씨를 선택하고<br>스타일을 추천 받아보세요</p>
     </div>
 
-
-
   <div class="weather">
     <Weather />
   </div>

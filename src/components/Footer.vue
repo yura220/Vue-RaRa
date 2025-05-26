@@ -3,16 +3,26 @@ import './css/main.css'
 import { useRoute } from 'vue-router'
 import { computed } from 'vue'
 
+// 현재 라우트 경로 확인
 const route = useRoute()
 const isEventPage = computed(() => route.path === '/event')
 
+// Vite의 base 경로 자동 반영
+const base = import.meta.env.BASE_URL
 </script>
+
 <template>
   <footer :class="{ 'event-footer': isEventPage }" id="footer">
     <div class="wrap">
       <!-- 왼쪽 로고 -->
       <div class="footer-left">
-        <img :src="isEventPage ? '/img/event-footer-logo.png' : '/img/footer-logo.png'" alt="로고" class="logo" />
+        <img
+          :src="isEventPage
+            ? '/img/event-footer-logo.png'
+            : '/img/footer-logo.png'"
+          alt="로고"
+          class="logo"
+        />
       </div>
 
       <!-- 가운데 텍스트 -->

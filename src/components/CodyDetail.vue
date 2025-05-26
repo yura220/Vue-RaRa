@@ -1,6 +1,7 @@
 <script setup>
 import { useRoute, useRouter } from 'vue-router';
 import { weatherMap } from './js/weatherDataMap.js';
+import { recentViewed } from '../stores/recentViewed.js'
 import './css/codyDetail.css';
 
 const route = useRoute();
@@ -14,6 +15,24 @@ const items = weatherData.items;
 
 console.log('codys:', codys);
 console.log('items:', items);
+
+const base = import.meta.env.BASE_URL;
+
+function handleProductClick(product) {
+  const viewed = JSON.parse(localStorage.getItem('recentViewed')) || []
+
+  const productWithFullImage = {
+    ...product,
+    image: product.image.startsWith('http') ? product.image : base + product.image,
+    _key: `${product.id}-${weatherType}`
+  }
+
+  viewed.unshift(productWithFullImage)
+  const unique = Array.from(new Map(viewed.map(p => [p._key, p])).values())
+  const sliced = unique.slice(0, 5)
+  localStorage.setItem('recentViewed', JSON.stringify(sliced))
+  recentViewed.value = sliced
+}
 </script>
 
 <template>
@@ -36,8 +55,10 @@ console.log('items:', items);
             <ul class="d-lists">
               <li
                 v-for="item in items.filter(i => i.group === cody.group)"
-                :key="item.id"
+                :key="item.id + '-' + weatherType"
                 class="d-list"
+                @click="handleProductClick(item)"
+                style="cursor: pointer"
               >
                 <img :src="item.image" alt="아이템 이미지" class="d-thumb" />
                 <div class="d-text">

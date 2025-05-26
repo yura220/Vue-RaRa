@@ -1,6 +1,8 @@
 <script setup>
 import { useRoute, useRouter } from 'vue-router'
 import { weatherMap } from './js/weatherDataMap.js';
+import { recentViewed } from '../stores/recentViewed.js'
+import RecentViewed from './RecentViewed.vue'
 import './css/codyList.css';
 import './css/codyDetail.css';
 import './css/itemList.css';
@@ -8,6 +10,28 @@ import './css/itemList.css';
 import { Splide, SplideSlide } from '@splidejs/vue-splide'
 import '@splidejs/vue-splide/css'
 import { ref, onMounted, nextTick, computed } from 'vue'
+
+const base = import.meta.env.BASE_URL
+
+function handleProductClick(product) {
+  const viewed = JSON.parse(localStorage.getItem('recentViewed')) || []
+
+  const fullImage =
+    product.image.startsWith('http') ? product.image : base + product.image
+
+  const productWithFullImage = {
+    ...product,
+    image: fullImage,
+    _key: `${product.id}-${weatherType}`
+  }
+
+  viewed.unshift(productWithFullImage)
+  const unique = Array.from(new Map(viewed.map(p => [p._key, p])).values())
+  const sliced = unique.slice(0, 5)
+
+  localStorage.setItem('recentViewed', JSON.stringify(sliced))
+  recentViewed.value = sliced
+}
 
 const route = useRoute();
 const weatherType = route.params.weatherType || 'rainy';
@@ -32,6 +56,7 @@ onMounted(() => {
     })
   })
 })
+
 const groupedItems = computed(() => {
   const groups = []
   for (let i = 0; i < itemList.value.length; i += 2) {
