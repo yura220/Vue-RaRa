@@ -170,7 +170,7 @@ footer {
   transition: 0.5s;
 }
 
-/* 모바일반응형 768 */
+/* 태블릿 반응형 768 */
 @media screen and (max-width:768px) {
   section {
     height: calc(100vh - 100px);
@@ -244,3 +244,6 @@ footer {
     font-weight: 600;
   }
 }
+
+/* 모바일 */
+@media (max-width: 480px) {}

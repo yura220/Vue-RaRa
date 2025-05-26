@@ -1,13 +1,16 @@
-<script setup>
+<script setup lang="ts">
 import './css/sidebar.css'
 import { ref, computed, watch } from 'vue'
 import { RouterLink, useRoute, useRouter } from 'vue-router'
 
+const { isMobile, isSideOpen } = defineProps<{
+  isMobile: boolean
+  isSideOpen: boolean
+}>()
+
 const route = useRoute()
 const router = useRouter()
 
-// base 경로 자동 처리 (GitHub Pages 대응)
-const base = import.meta.env.BASE_URL
 const currentPath = ref(route.path)
 
 watch(route, () => {
@@ -44,8 +47,8 @@ function isActive(icon) {
           class="logo"
         />
       </router-link>
-      <ul class="side-icon">
-        <li v-for="icon in icons" :key="icon.type" @click="currentPath = icon.path">
+      <ul class="side-icon" :style="{ display: isMobile && !isSideOpen ? 'none' : '' }">
+        <li v-for="icon in icons" :key="icon.type" @click="currentPath = icon.path" v-if="!isMobile || isSideOpen">
           <router-link :to="icon.path" :aria-label="icon.label">
             <i
               class="s-icon"

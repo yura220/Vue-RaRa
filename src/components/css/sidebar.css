@@ -1,4 +1,3 @@
-
 #side {
   position: fixed;
   width: 72px;
@@ -37,8 +36,7 @@
 }
 
 /* 아이콘 클릭 전 기본 이미지 */
-
-.s-icon{
+.s-icon {
   display: block;
   width: 35px;
   height: 35px;
@@ -93,12 +91,161 @@
 }
 
 /* 이벤트 페이지 전용 아이콘 이미지 */
-.s-icon1.event-icon { background-image: url('/img/event-sunny.png'); }
-.s-icon2.event-icon { background-image: url('/img/event-cloudy.png'); }
-.s-icon3.event-icon { background-image: url('/img/event-rainy.png'); }
-.s-icon4.event-icon { background-image: url('/img/event-snowy.png'); }
-.s-icon5.event-icon { background-image: url('/img/event-best.png'); }
+.s-icon1.event-icon {
+  background-image: url('/img/event-sunny.png');
+}
+
+.s-icon2.event-icon {
+  background-image: url('/img/event-cloudy.png');
+}
+
+.s-icon3.event-icon {
+  background-image: url('/img/event-rainy.png');
+}
+
+.s-icon4.event-icon {
+  background-image: url('/img/event-snowy.png');
+}
+
+.s-icon5.event-icon {
+  background-image: url('/img/event-best.png');
+}
 
 #side.event .side-icon a {
   background-color: #29328D;
+}
+
+/* 모바일 */
+@media (max-width: 480px) {
+  #side {}
+
+  #side .flex {}
+
+  #side ul {}
+
+  #side .logo {}
+
+  .s-icon {}
+
+  .s-icon1 {}
+
+  .s-icon2 {}
+
+  .s-icon3 {}
+
+  .s-icon4 {}
+
+  .s-icon5 {}
+
+  .s-icon1.active {}
+
+  .s-icon2.active {}
+
+  .s-icon3.active {}
+
+  .s-icon4.active {}
+
+  .s-icon5.active {}
+
+  #side .side-icon a {}
+
+  #side.event {}
+
+  #side.event .logo {}
+
+  .s-icon1.event-icon {}
+
+  .s-icon2.event-icon {}
+
+  .s-icon3.event-icon {}
+
+  .s-icon4.event-icon {}
+
+  .s-icon5.event-icon {}
+
+  #side.event .side-icon a {}
+}
+
+/* 태블릿 */
+@media (max-width: 768px) {
+  #side {
+    width: 100vw;
+    height: 56px;
+    top: 0;
+    left: 0;
+    z-index: 500;
+  }
+
+  #side .flex {
+    flex-direction: inherit;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  #side .flex>a {}
+
+  #side ul {
+    flex-direction: row;
+    padding: 0;
+    margin-right: 20px;
+  }
+
+  #side ul.side-icon.hidden {
+    display: none !important;
+  }
+
+  #side .logo {
+    width: 60px;
+    height: 26px;
+    margin-left: 20px;
+  }
+
+  .s-icon {
+    width: 17px;
+    height: 17px;
+    position: static;
+  }
+
+  .s-icon1 {}
+
+  .s-icon2 {}
+
+  .s-icon3 {}
+
+  .s-icon4 {}
+
+  .s-icon5 {}
+
+  .s-icon1.active {}
+
+  .s-icon2.active {}
+
+  .s-icon3.active {}
+
+  .s-icon4.active {}
+
+  .s-icon5.active {}
+
+  #side .side-icon a {
+    width: 25px;
+    height: 25px;
+    position: static;
+  }
+
+  #side.event {}
+
+  #side.event .logo {}
+
+  .s-icon1.event-icon {}
+
+  .s-icon2.event-icon {}
+
+  .s-icon3.event-icon {}
+
+  .s-icon4.event-icon {}
+
+  .s-icon5.event-icon {}
+
+  #side.event .side-icon a {}
+
 }

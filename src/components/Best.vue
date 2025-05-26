@@ -26,6 +26,7 @@ function getEventY(e) {
 }
 
 const activeImage = ref('') // 현재 크게 보여줄 이미지
+
 watch(selectedIndex, (newIndex) => {
   const item = bestMap[newIndex]
   if (item && item.main?.colors?.length > 0) {
@@ -52,7 +53,6 @@ function openPopup(index) {
     }
   })
 }
-
 
 // 팝업 드래그 -----------------------------------------------------------------------
 function startDrag(e) {

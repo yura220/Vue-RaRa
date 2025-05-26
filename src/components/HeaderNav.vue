@@ -1,15 +1,32 @@
 <script setup>
 import './css/header.css'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import { computed } from 'vue'
 
 // GitHub Pages 대응을 위한 base 경로
 const base = import.meta.env.BASE_URL
-
+const router = useRouter()
 const route = useRoute()
 
 // 정확히 "/event"일 때만 이벤트 페이지로 판단
 const isEventPage = computed(() => route.path === '/event')
+
+//사이드바랑 토글 -----------------------------------------------------------------------
+const props = defineProps(['isMobile', 'isSideOpen'])
+const emit = defineEmits(['toggleSide'])
+
+function handleHamburgerClick() {
+  if (props.isMobile) {
+    emit('toggleSide')   // 모바일: 사이드바 열기/닫기
+  } else {
+    router.push('/404-error')  // 데스크탑: 404 페이지로 이동
+  }
+}
+
+//404링크 -----------------------------------------------------------------------------
+function goTo(path) {
+  router.push(path)
+}
 </script>
 
 <template>

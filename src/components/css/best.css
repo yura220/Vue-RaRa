@@ -59,7 +59,7 @@
   transition: 0.3s;
 }
 
-#best .btn::before{
+#best .btn::before {
   content: "";
   background-image: url(/img/plus-b.png);
   display: block;
@@ -70,10 +70,12 @@
   background-repeat: no-repeat;
   transition: 0.3s;
 }
-#best .btn:hover::before{
+
+#best .btn:hover::before {
   filter: invert();
 }
-#best .btn:hover{
+
+#best .btn:hover {
   background-color: #B1D7EC;
 }
 
@@ -291,6 +293,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 #best .r-box {
   width: 268px;
   height: 290px;
@@ -346,3 +349,9 @@
   cursor: pointer;
   filter: drop-shadow(0 3px 4px rgb(0, 0, 0, 0.1));
 }
+
+/* 모바일 */
+@media (max-width: 480px) {}
+
+/* 태블릿 */
+@media (max-width: 768px) {}

@@ -139,6 +139,11 @@ function goBackOrHome() {
   }
 }
 
+//404링크 -----------------------------------------------------------------------------
+function goTo(path) {
+  router.push(path)
+}
+
 </script>
 
 <template>
@@ -163,7 +168,8 @@ function goBackOrHome() {
 
         <div class="cody-right" :class="['page', 'theme', weatherType]">
           <h3 class="a-title">날씨 따라 즐기는 하루</h3>
-          <ul class="a-lists">           <li v-for="(a, i) in weatherData.activities" :key="i" class="a-list">
+          <ul class="a-lists">
+            <li v-for="(a, i) in weatherData.activities" :key="i" class="a-list">
             <h4>{{ a.title }}</h4>
             <p>{{ a.desc }}</p>
             </li>
@@ -193,9 +199,9 @@ function goBackOrHome() {
                   class="d-list"
                 >
                   <div class="d-thumb-box">
-                    <img :src="item.image" :alt="item.brand + ' 제품 이미지'" class="d-thumb" />
+                    <img :src="item.image" :alt="item.brand + ' 제품 이미지'" class="d-thumb" @click="goTo('/404-error')"/>
                   </div>
-                  <div class="d-text">
+                  <div class="d-text" @click="goTo('/404-error')">
                     <strong>{{ item.brand }}</strong>
                     <p>{{ item.desc }}</p>
                     <div>
@@ -216,7 +222,7 @@ function goBackOrHome() {
     <div class="wrap flex">
       <div class="i-layout">
         <div class="i-main">
-          <img :src="weatherData.select[0].image" alt="" class="i-image" />
+          <img :src="weatherData.select[0].image" alt="" class="i-image" @click="goTo('/404-error')"/>
         </div>
 
       <div class="i-box" v-if="showSwiper">
@@ -235,9 +241,9 @@ function goBackOrHome() {
             <div class="vertical-group">
               <div v-for="slide in group" :key="slide.id" class="i-card">
                 <div class="i-thumb-box">
-                  <img :src="slide.image" class="i-thumb" :alt="slide.brand + ' 제품 이미지'" />
+                  <img :src="slide.image" class="i-thumb" :alt="slide.brand + ' 제품 이미지'" @click="goTo('/404-error')" />
                 </div>
-                <div class="i-info">
+                <div class="i-info" @click="goTo('/404-error')">
                   <strong>{{ slide.brand }}</strong>
                   <p>{{ slide.desc }}</p>
                   <p>{{ slide.price }}</p>
@@ -246,8 +252,8 @@ function goBackOrHome() {
                       <p>Color : {{ slide.color }}</p>
                     </div>
                   <span>
-                    <button>구매하기</button>
-                    <button>장바구니</button>
+                    <button @click="goTo('/404-error')">구매하기</button>
+                    <button @click="goTo('/404-error')">장바구니</button>
                   </span>
                 </div>
               </div>
@@ -255,7 +261,6 @@ function goBackOrHome() {
           </SplideSlide>
         </Splide>
       </div>
-
       </div>
     </div>
   </section>

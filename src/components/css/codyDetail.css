@@ -70,7 +70,7 @@
   padding: 10px 0;
 }
 
-#detail .d-thumb-box{
+#detail .d-thumb-box {
   width: 85px;
   height: 85px;
   overflow: hidden;
@@ -127,3 +127,9 @@
   background-size: 100%;
   justify-self: end;
 }
+
+/* 모바일 */
+@media (max-width: 480px) {}
+
+/* 태블릿 */
+@media (max-width: 768px) {}
