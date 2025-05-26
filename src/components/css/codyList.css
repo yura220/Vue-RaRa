@@ -128,5 +128,5 @@
 /* 날씨별 색상 */
 .theme.sunny   { --primary: #EBD5A4; }
 .theme.cloudy  { --primary: #B3C3D4; }
-.theme.rainy   { --primary: #B3C3D4; }
+.theme.rainy   { --primary: #A7ABAD; }
 .theme.snowy   { --primary: #93D8FF; }
