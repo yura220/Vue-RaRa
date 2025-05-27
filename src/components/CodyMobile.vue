@@ -3,7 +3,7 @@ import { useRoute, useRouter } from 'vue-router'
 import { weatherMap } from './js/weatherDataMap.js'
 import { recentViewed } from '../stores/recentViewed.js'
 import { ref, onMounted, nextTick, computed } from 'vue'
-import './css/codyMobile.css'
+import './css/CodyMobile.css'
 
 const route = useRoute()
 const router = useRouter()
