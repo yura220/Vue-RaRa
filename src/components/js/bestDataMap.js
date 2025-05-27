@@ -92,7 +92,7 @@ export const bestMap = {
   bag: {
     main: {
       id: 1,
-      brand: 'Velor',
+      brand: 'Lumina',
       name: '루미나 시티백',
       price: '89,000원',
       desc: '현대적인 디자인과 우아한 디테일로, 세련된 여성들을 위한 핸드백',
@@ -107,21 +107,21 @@ export const bestMap = {
         id: 1,
         image: '/img/best_bag-4.jpg',
         brand: 'Nobla',
-        name: '벨로르 인피니티 토트백',
+        name: '노블라 인피니티 토트백',
         price: '239,000원'
       },
       {
         id: 2,
         image: '/img/best_bag-5.jpg',
         brand: 'Ermer',
-        name: '노블라 그랜드 숄더백',
+        name: '에르메르 그랜드 숄더백',
         price: '129,000원'
       },
       {
         id: 3,
         image: '/img/best_bag-6.jpg',
         brand: 'Lumina',
-        name: '에르메르 숄더백',
+        name: '루미나 숄더백',
         price: '89,000원'
       },
       {
