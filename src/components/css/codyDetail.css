@@ -80,6 +80,8 @@
 #detail .d-thumb {
   width: 100%;
   cursor: pointer;
+  height: 100%;
+  object-fit: cover;
 }
 
 #detail .d-text {

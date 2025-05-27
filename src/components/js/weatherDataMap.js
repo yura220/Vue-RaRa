@@ -30,7 +30,7 @@ export const weatherMap = {
     items: [
       { id: 1, group: 1, brand: 'Eliston', desc: 'Essentials Full-Zip Hoodie', color: 'Gray', colorCode: '#808080', price: '129,000원', image: '../img/rainy1-1.png' },
       { id: 2, group: 1, brand: 'Novera', desc: 'Fleece Pullover Hoodie', color: 'Muted Lavender', colorCode: '#A89CA3', price: '48,000원', image: '../img/rainy1-2.png' },
-      { id: 3, group: 1, brand: 'Darsell', desc: 'Double-Breasted Long Coat', color: 'Ivory', colorCode: '#FFFFF0', price: '79,000원', image: '../img/rainy1-3.png' },
+      { id: 3, group: 1, brand: 'Darsell', desc: 'Double-Breasted Long Coat', color: 'Ivory', colorCode: '#beaea8', price: '79,000원', image: '../img/rainy1-3.png' },
       { id: 4, group: 1, brand: 'Ravice', desc: 'Wool-Blend Short Coat', color: 'Warm Brown', colorCode: '#8B5E3C', price: '24,000원', image: '../img/rainy1-4.png' },
       { id: 5, group: 2, brand: 'Mivale', desc: 'U Crew Neck Short Sleeve T-Shirt', color: 'Jet Black ', colorCode: '#111111', price: '89,000원', image: '../img/rainy2-1.png' },
       { id: 6, group: 2, brand: 'Zerith', desc: 'Original Wayfarer Sunglasses', color: 'Chestnut Brown', colorCode: '#7B3F00', price: '33,000원', image: '../img/rainy2-2.png' },
@@ -119,18 +119,19 @@ export const weatherMap = {
   { id: 12, group: 3, brand: 'Drift Supply', desc: 'Modular High Top', color: 'Concrete Ash', colorCode: '#B2B2B2', price: '49,000원', image: '/img/sunny3-4.png' }
 ],
     slide: [
-  { id: 1, brand: 'Haya Loop', desc: 'Silk Twisted Hair Tie', color: 'Cherry Cream', colorCode: '#F6D6D0', price: '39,000원', image: '/img/sunny_item1.png' },
-  { id: 2, brand: 'Gioia', desc: 'Perfume', color: '', colorCode: '#F5F5F5', price: '29,000원', image: '/img/sunny_item2.png' },
-  { id: 3, brand: 'JUNE Footwear', desc: 'Square Toe Mule', color: 'Ivory Oat', colorCode: '#EAE1C5', price: '89,000원', image: '/img/sunny_item3.png' },
-  { id: 4, brand: 'My Cozy Atelier', desc: 'Faux Fur Trimmed Gloves', color: 'Creamy Taupe', colorCode: '#D8C9B4', price: '49,000원', image: '/img/sunny_item4.png' },
-  { id: 5, brand: 'Aura District', desc: 'Pleated Linen Shorts', color: 'Sandstone Beige', colorCode: '#D6C7A1', price: '39,000원', image: '/img/sunny_item5.png' },
-  { id: 6, brand: 'Nova Theory', desc: 'Breeze Oversized Tee', color: 'Cloud White', colorCode: '#F6F8F9', price: '29,000원', image: '/img/sunny_item6.png' },
-  { id: 7, brand: 'Kyra Path', desc: 'Nylon Utility Sling', color: 'Graphite Green', colorCode: '#5D6B4E', price: '89,000원', image: '/img/sunny_item7.png' },
-  { id: 8, brand: 'Kithé & Kin', desc: 'Ribbed Tank Top', color: 'Butter Beige', colorCode: '#F8E6B2', price: '49,000원', image: '/img/sunny_item8.png' },
-  { id: 9, brand: 'Lynette Jewel', desc: 'Vertical Bar Necklace', color: 'Icy Rose', colorCode: '#EBCEDB', price: '39,000원', image: '/img/sunny_item9.png' },
-  { id: 10, brand: 'Soft Division', desc: 'Organic Cardigan', color: 'Bitter Brown', colorCode: '#5A4633', price: '29,000원', image: '/img/sunny_item10.png' },
-  { id: 11, brand: 'Hazy Season', desc: 'Knit Halter Crop', color: 'Apricot Milk', colorCode: '#FFE0C5', price: '89,000원', image: '/img/sunny_item11.png' },
-  { id: 12, brand: 'Ueur Paris', desc: 'Petite Heart Pendant Necklace', color: 'Champagne Gold', colorCode: '#F7E7CE', price: '49,000원', image: '/img/sunny_item12.png' }
+  { id: 1, brand: 'Haya Loop', desc: 'Silk Twisted Hair Tie', color: 'Rose Blush', colorCode: '#e3adb5', price: '39,000원', image: '/img/sunny_item1.png' },
+  { id: 2, brand: 'Gioia', desc: 'Perfume', color: 'Snow White', colorCode: '#F5F5F5', price: '29,000원', image: '/img/sunny_item2.png' },
+  { id: 3, brand: 'JUNE Footwear', desc: 'Square Toe Mule', color: 'Dusty Sky Blue', colorCode: '#7ba0bd', price: '89,000원', image: '/img/sunny_item3.png' },
+  { id: 4, brand: 'My Cozy Atelier', desc: 'Faux Fur Trimmed Gloves', color: 'Soft Peach Beige', colorCode: '#eccccd', price: '49,000원', image: '/img/sunny_item4.png' },
+  { id: 5, brand: 'Aura District', desc: 'Raw Edge Shorts', color: 'Olive Sand', colorCode: '#a4a264', price: '39,000원', image: '/img/sunny_item5.png' },
+  { id: 6, brand: 'Nova Theory', desc: 'Breeze Oversized Tee', color: 'Tangerine Amber', colorCode: '#f6712a', price: '29,000원', image: '/img/sunny_item6.png' },
+  { id: 7, brand: 'Kyra Path', desc: 'Nylon Utility Sling', color: 'Charcoal Black', colorCode: '#1b181e', price: '89,000원', image: '/img/sunny_item7.png' },
+  { id: 8, brand: 'Kithé & Kin', desc: 'Ribbed Tank Top', color: 'Ash Gray', colorCode: '#bebebe', price: '49,000원', image: '/img/sunny_item8.png' },
+  { id: 9, brand: 'Lynette Jewel', desc: 'Vertical Bar Necklace', color: 'Crimson Blush', colorCode: '#ea4e4b', price: '39,000원', image: '/img/sunny_item9.png' },
+  { id: 10, brand: 'Soft Division', desc: 'Organic Cardigan', color: 'Cream Off-White', colorCode: '#f9f7f4', price: '29,000원', image: '/img/sunny_item10.png' },
+  { id: 11, brand: 'Hazy Season', desc: 'Knit Halter Crop', color: 'Graphite Black', colorCode: '#28292f', price: '89,000원', image: '/img/sunny_item11.png' },
+  { id: 12, brand: 'Ueur Paris', desc: 'Petite Heart Pendant Necklace', color: 'Smoky Silver', colorCode: '#7f7c72', price: '49,000원', image: '/img/sunny_item12.png' }
+
 ]
 ,
     activities: [
