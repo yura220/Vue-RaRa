@@ -214,5 +214,7 @@
 #cody .cody-right {}
 #cody .a-title {}
 #cody .a-lists {}
-#cody .a-list {}
+#cody .a-list p {
+  letter-spacing: -0.4px;
+}
 }

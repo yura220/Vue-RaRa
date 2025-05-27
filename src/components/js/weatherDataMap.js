@@ -56,10 +56,10 @@ export const weatherMap = {
       { id: 12, group: 3, brand: 'NOTUS', desc: 'Sparkling Hoop Earrings', color: 'Silver', colorCode: '#C0C0C0', price: '49,000원', image: '/img/rainy_item12.png' }
     ],
     activities: [
-      { id: 1, title: '헤어 커트나 염색하기', desc: '흐린 날, 헤어 스타일 변신으로 기분 전환!' },
-      { id: 2, title: '빈티지 샵 탐방하기', desc: '흐린 날의 감성을 살려 레트로 룩 도전!' },
+      { id: 1, title: '우산과 함께 스타일링 연출', desc: '비 오는 날만의 우산 코디로 인생샷!' },
+      { id: 2, title: '카페에서 패션 스케치 하기', desc: '빗소리 들으며 감성 스타일 그리기' },
       { id: 3, title: '스트릿 패션 사진 기록하기', desc: '부드러운 조명을 활용해 OOTD 기록하기' },
-      { id: 4, title: '패션 영화 감상', desc: '차 한 잔과 함께 흐린 날의 차분한 분위기 즐기기' }
+      { id: 4, title: '차분한 티타임 즐기기', desc: '비 오는 날, 따뜻한 차 한 잔의 여유' }
     ],
     detail: [
       {
@@ -214,7 +214,7 @@ export const weatherMap = {
       { id: 1, title: '헤어 커트나 염색하기', desc:'흐린 날, 헤어 스타일 변신으로 기분 전환!' },
       { id: 2, title: '빈티지 샵 탐방하기', desc:'흐린 날의 감성을 살려 레트로 룩 도전!'  },
       { id: 3, title: '스트릿 패션 사진 기록하기', desc:'부드러운 조명을 활용해 OOTD 기록하기'  },
-      { id: 4, title: '패션 영화 감상', desc:'차 한 잔과 함께 흐린 날의 차분한 분위기 즐기기'  }
+      { id: 4, title: '패션 영화 감상', desc:'감각적인 패션 영화 한 편으로 취향 충전하기'  }
     ],
     detail: [
       {
@@ -287,9 +287,9 @@ export const weatherMap = {
       { id: 12, group: 3, brand: 'FLOREVE', desc: 'Knit Bliss Socks', color: 'Gray', colorCode: '#696762', price: '49,000원', image: '/img/snowy_item12.jpg' }
     ],
     activities: [
-      { id: 1, title: '겨울 룩북 제작', desc:'겨울 옷을 조합해 룩북 만들고 SNS에 공유하기' },
+      { id: 1, title: '겨울 룩북 제작', desc:'겨울 옷 조합해 룩북 만들고 SNS 공유하기' },
       { id: 2, title: '겨울 패션 매거진 탐독', desc:'따뜻한 코코아와 함께 Vogue 겨울호 읽기'  },
-      { id: 3, title: '스노우 포토 슈팅', desc:'방수 부츠 신고 눈 내리는 배경으로 인생샷 건지기'  },
+      { id: 3, title: '스노우 포토 슈팅', desc:'방수 부츠 신고 눈 내리는 배경에서 인생샷'  },
       { id: 4, title: '옷장 정리와 코디 짜기', desc:'지금이 바로 겨울 아이템을 재점검할 기회!'  }
     ],
     detail: [
