@@ -96,7 +96,7 @@ export const bestMap = {
     main: {
       id: 1,
       brand: 'Lumina',
-      name: '루미나 시티백',
+      name: 'City Bag',
       price: '89,000원',
       desc: '현대적인 디자인과 우아한 디테일로, 세련된 여성들을 위한 핸드백',
       colors: [
@@ -110,28 +110,28 @@ export const bestMap = {
         id: 1,
         image: '/img/best_bag-4.jpg',
         brand: 'Nobla',
-        name: '노블라 인피니티 토트백',
+        name: 'Infinity Tote Bag',
         price: '239,000원'
       },
       {
         id: 2,
         image: '/img/best_bag-5.jpg',
         brand: 'Ermer',
-        name: '에르메르 그랜드 숄더백',
+        name: 'Grand Shoulder Bag',
         price: '129,000원'
       },
       {
         id: 3,
         image: '/img/best_bag-6.jpg',
         brand: 'Lumina',
-        name: '루미나 숄더백',
+        name: 'Shoulder Bag',
         price: '89,000원'
       },
       {
         id: 4,
         image: '/img/best_bag-7.jpg',
         brand: 'Arcarr',
-        name: '아르카르 에센셜 백',
+        name: 'Essential Bag',
         price: '189,000원'
       }
     ]

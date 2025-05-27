@@ -1,8 +1,10 @@
 #cody {
   width: 100%;
-  height: 100%;
+  height: auto;
+  margin-bottom: 50px;
 }
 #cody .m-wrap {
+  height: auto;
   margin-top: 80px;
 }
 #cody .cody-list {}
@@ -11,7 +13,7 @@
   width: 100%;
 }
 #cody .c-img-box {
-  width: 342px;
+  width: 100%;
   height: 540px;
   overflow: hidden;
   border-radius: 12px;
@@ -187,12 +189,15 @@
 }
 
 @media (max-width: 480px){
-  #cody {}
+  #cody {
+    height: auto;
+    margin-bottom: 50px;
+  }
 #cody .m-wrap {}
 #cody .cody-list {}
 #cody .s-card {}
 #cody .c-img-box {
-  width: 342px;
+  width: 100%;
   height: 540px;
   overflow: hidden;
   border-radius: 12px;

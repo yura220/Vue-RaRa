@@ -74,17 +74,25 @@ function toggleMenu() {
   </li>
 
   <!-- 햄버거 버튼 (마지막에 둠) -->
-  <li>
-    <div
+  <li class="h-btn">
+  <a
+    href="#"
     class="hamburger-btn"
     role="button"
     tabindex="0"
     aria-label="메뉴 열기"
-    @click="toggleMenu"
+    @click.prevent="toggleMenu"
   >
-    <i class="s-icon hamburger"></i>
-  </div>
-  </li>
+    <i
+      class="s-icon hamburger"
+      :class="[
+        'hamburger-icon',
+        menuOpen ? 'active' : '',
+        isEventPage ? 'event-icon' : ''
+      ]"
+    ></i>
+  </a>
+</li>
 </ul>
 
     </div>

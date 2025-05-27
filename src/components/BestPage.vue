@@ -69,15 +69,15 @@ function goTo(type) {
       </div>
 
       <div class="c-btns">
-        <button class="c-btn c-btn1" @click="goTo('/404-error')">구매하기</button>
-        <button class="c-btn c-btn2" @click="goTo('/404-error')">장바구니</button>
+        <button class="c-btn c-btn1" @click="goTo('/404-error')">장바구니</button>
+        <button class="c-btn c-btn2" @click="goTo('/404-error')">구매하기</button>
       </div>
     </div>
   </section>
 
   <section id="bestB">
     <!-- 관련 상품 텍스트 정보 -->
-    <div class="p-bottom">
+    <div class="p-bottom m-wrap">
       <div class="r-items">
         <div
           v-for="rel in currentItem.related"
@@ -85,14 +85,14 @@ function goTo(type) {
           class="r-info"
         >
           <div class="r-box">
-            <img :src="rel.image" :alt="rel.name" />
+            <img :src="rel.image" :alt="rel.name" @click="goTo('/404-error')" />
           </div>
           <p>{{ rel.brand }}</p>
           <p>{{ rel.name }}</p>
           <p>{{ rel.price }}</p>
           <div class="r-btns">
-            <button class="c-btn c-btn1" @click="goTo('/404-error')">구매하기</button>
-            <button class="c-btn c-btn2" @click="goTo('/404-error')">장바구니</button>
+            <button class="c-btn c-btn1" @click="goTo('/404-error')">장바구니</button>
+            <button class="c-btn c-btn2" @click="goTo('/404-error')">구매하기</button>
           </div>
         </div>
       </div>

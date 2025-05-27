@@ -6,7 +6,12 @@ import Scratch from './Scratch.vue';
 <template>
   <div class="event-container">
     <section class="event-slide">
-      <img src="/img/event-page1.png" alt="이벤트 페이지" />
+      <picture>
+        <!-- 모바일용 이미지 -->
+        <source srcset="/img/mevent.png" media="(max-width: 768px)" />
+        <!-- 기본 웹용 이미지 -->
+        <img src="/img/event-page1.png" alt="이벤트 페이지" />
+      </picture>
       <Scratch />
     </section>
   </div>

@@ -22,7 +22,7 @@
 }
 
 #side ul {
-  padding: 0 0 10px 0;
+  padding: 0 0 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -117,6 +117,10 @@ margin-top: 10px;
   background-color: #29328D;
 }
 
+.h-btn {
+  display: none;
+}
+
 /* 태블릿 */
 @media (max-width: 768px) {
   #side {
@@ -156,26 +160,14 @@ margin-top: 10px;
     position: static;
   }
 
+  .h-btn {
+    display: block;
+  }
+
   .hamburger{
     width: 25px;
     height: 25px;
     position: static;
-  }
-
-  .hamburger::before{
-    content: "";
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25px;
-    height: 25px;
-    background-image: url(/img/hamburger-y.png);
-    background-color: #B1D7EC;
-    border-radius: 50%;
-    background-size: 15px;
-    background-repeat: no-repeat;
-    background-position: center;
   }
 
   #side .side-icon a {
@@ -231,6 +223,21 @@ margin-top: 10px;
   justify-content: center;
   align-items: center;
   margin: 0 0 0 10px;
+}
+
+.s-icon.hamburger {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-image: url('/img/hamburger-y.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.s-icon.hamburger.event-icon{
+  background-image: url('/img/hamburger-event.png');
+  width: 14px;
+  height: 14px;
 }
 
 }

@@ -36,16 +36,37 @@ function goTo(type) {
 <template>
   <section id="bestM">
     <div class="m-wrap">
-      <h2>Let us recommend your kind of day.</h2>
+      <h2>Let us recommend<br/>your kind of day.</h2>
       <div class="b-box">
-        <img src="/img/Look.png" alt="추천코디">
+        <img src="/img/Look-m.png" alt="추천코디">
       </div>
       <ul>
-        <li><a @click="goTo('top')">상의</a></li>
-        <li><a @click="goTo('bottom')">하의</a></li>
-        <li><a @click="goTo('Accessories')">악세사리</a></li>
-        <li><a @click="goTo('shoes')">신발</a></li>
-        <li><a @click="goTo('bag')">가방</a></li>
+        <li>
+          <a @click="goTo('top')">
+            <p>상의</p>
+          </a>
+        </li>
+        <li>
+          <a @click="goTo('bottom')">
+            <p>하의</p>
+            </a>
+          </li>
+        <li>
+          <a @click="goTo('bag')">
+            <p>가방</p>
+          </a>
+          </li>
+        <li>
+          <a @click="goTo('Accessories')">
+            <p>악세사리</p>
+          </a>
+          </li>
+        <li>
+          <a @click="goTo('shoes')">
+            <p>신발</p>
+          </a>
+          </li>
+          <li></li>
       </ul>
     </div>
   </section>

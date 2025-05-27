@@ -12,6 +12,7 @@
   overflow: hidden;
   max-height: inherit;
   overflow-y: auto;
+  height: 100%;
 }
 
 #best h2 {
