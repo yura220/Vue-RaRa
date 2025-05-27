@@ -5,12 +5,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/img
 	 viewBox="0 0 51 51" style="enable-background:new 0 0 51 51;" xml:space="preserve">
 <image style="overflow:visible;" width="51" height="51" xlink:href="../figma.png" >
 </image>
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> origin/sub2
+=======
+>>>>>>> origin/img
 	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
 <style type="text/css">
 	.st0{clip-path:url(#SVGID_2_);}
@@ -36,6 +42,7 @@
 	</g>
 </g>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/sub
 =======
 	 viewBox="0 0 51 51" style="enable-background:new 0 0 51 51;" xml:space="preserve">
@@ -49,4 +56,7 @@
 <image style="overflow:visible;" width="51" height="51" xlink:href="../figma.png" >
 </image>
 >>>>>>> origin/markup
+=======
+>>>>>>> origin/sub
+>>>>>>> origin/img
 </svg>

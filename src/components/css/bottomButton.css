@@ -61,9 +61,3 @@
 #aside .aside-box button:nth-child(4) i::before {
   background-image: url(/img/snowy-btn.png);
 }
-
-/* 모바일 */
-@media (max-width: 480px) {}
-
-/* 태블릿 */
-@media (max-width: 768px) {}

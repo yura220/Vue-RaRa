@@ -1,6 +1,5 @@
 <script setup>
 import { useRouter } from 'vue-router';
-
 import { ref } from 'vue'
 import { doc, getDoc, setDoc, updateDoc, increment } from 'firebase/firestore'
 import { db } from '@/firebase'

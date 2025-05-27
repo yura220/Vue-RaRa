@@ -6,11 +6,17 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <image style="overflow:visible;" width="51" height="51" xlink:href="../github.png" >
 </image>
 =======
 =======
 >>>>>>> origin/sub2
+=======
+<image style="overflow:visible;" width="51" height="51" xlink:href="../github.png" >
+</image>
+=======
+>>>>>>> origin/img
 <style type="text/css">
 	.st0{clip-path:url(#SVGID_2_);}
 	.st1{fill:#F26B6C;}
@@ -32,6 +38,7 @@
 	</g>
 </g>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/sub
 =======
 <image style="overflow:visible;" width="51" height="51" xlink:href="../github.png" >
@@ -43,4 +50,7 @@
 <image style="overflow:visible;" width="51" height="51" xlink:href="../github.png" >
 </image>
 >>>>>>> origin/markup
+=======
+>>>>>>> origin/sub
+>>>>>>> origin/img
 </svg>

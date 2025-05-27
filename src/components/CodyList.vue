@@ -66,7 +66,6 @@ const groupedItems = computed(() => {
 })
 
 const slide = weatherData.slide;
-
 const groupedSlide = computed(() => {
   const groups = []
   for (let i = 0; i < slide.length; i += 2) {

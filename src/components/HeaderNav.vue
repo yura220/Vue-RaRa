@@ -40,4 +40,3 @@ function goTo(path) {
     </div>
   </header>
 </template>
-

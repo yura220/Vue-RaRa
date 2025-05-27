@@ -2,90 +2,93 @@ export const bestMap = {
   top: {
     main: {
       id: 1,
-      brand: 'Mint&Milk',
-      name: '데일리 티셔츠',
+      brand: 'Lemonaire',
+      name: 'Sunny Knit Tee',
       price: '39,000원',
       desc: '지금 입기 딱 좋은, 컬러별 데일리 아이템',
       colors: [
-        { id: 1, name: 'Yellow', colorCode:'#f5e7c6', image: '/img/Look1.png' },
-        { id: 2, name: 'Pink', colorCode:'#eacbcb', image: '/img/look1-2.png' },
-        { id: 3, name: 'Sky', colorCode:'#c9dfef', image: '/img/look1-3.png' },
-        { id: 4, name: 'Green', colorCode:'#d7e7d0', image: '/img/look1-4.png' }
+        { id: 1, name: 'Yellow', colorCode: '#f5e7c6', image: '/img/Look1.png' },
+        { id: 2, name: 'Pink', colorCode: '#eacbcb', image: '/img/look1-2.png' },
+        { id: 3, name: 'Sky', colorCode: '#c9dfef', image: '/img/look1-3.png' },
+        { id: 4, name: 'Green', colorCode: '#d7e7d0', image: '/img/look1-4.png' }
+
       ],
     },
     related: [
       {
         id: 1,
         image: '/img/Look2.png',
-        brand: 'Mint&Milk',
-        name: '여름 티셔츠',
-        price: '39,000원'
+
+        brand: 'Clairvue',
+        name: 'SPainted T-shirt',
+        price: '29,000원'
       },
       {
         id: 2,
-        image: '/img/Look2.png',
-        brand: 'Mint&Milk',
-        name: '점프수트',
-        price: '39,000원'
+        image: '/img/Look3.png',
+        brand: 'Novera',
+        name: 'Solid color Hoodie',
+        price: '79,000원'
       },
       {
         id: 3,
-        image: '/img/Look2.png',
-        brand: 'Mint&Milk',
-        name: '크로스백',
-        price: '39,000원'
+        image: '/img/Look4.png',
+        brand: 'Optique Era',
+        name: 'Scoop Neck Tank Top',
+        price: '12,000원'
       },
       {
         id: 4,
-        image: '/img/Look2.png',
-        brand: 'Mint&Milk',
-        name: '화이트 힐',
-        price: '39,000원'
+        image: '/img/Look5.png',
+        brand: 'LUNEY STUDIO',
+        name: 'CBasic Short Sleeve Tee',
+        price: '29,000원'
+
       }
     ]
   },
   Accessories: {
     main: {
       id: 1,
-      brand: 'Mint&Milk',
-      name: '데일리 악세사리',
+      brand: 'UrbanEyes',
+      name: 'Tortoise Shell Wayfarer',
       price: '39,000원',
       desc: '지금 입기 딱 좋은, 컬러별 데일리 아이템',
       colors: [
-        { id: 1, name: 'Yellow', colorCode:'#f5e7c6', image: '/img/Look1.png' },
-        { id: 2, name: 'Pink', colorCode:'#eacbcb', image: '/img/look1-2.png' },
-        { id: 3, name: 'Sky', colorCode:'#c9dfef', image: '/img/look1-3.png' },
-        { id: 4, name: 'Green', colorCode:'#d7e7d0', image: '/img/look1-4.png' }
+        { id: 1, name: 'Yellow', colorCode: '#f5e7c6', image: '/img/Look10.png' },
+        { id: 2, name: 'Pink', colorCode: '#eacbcb', image: '/img/Look10-1.png' },
+        { id: 3, name: 'Sky', colorCode: '#c9dfef', image: '/img/Look10-2.png' },
+        { id: 4, name: 'Green', colorCode: '#d7e7d0', image: '/img/Look10-3.png' }
       ],
     },
     related: [
       {
         id: 1,
-        image: '/img/Look2.png',
-        brand: 'Mint&Milk',
-        name: '여름 티셔츠',
-        price: '39,000원'
+        image: '/img/Look6.png',
+        brand: 'ClearVision',
+        name: 'Classic Round Glasses',
+        price: '35,000원'
       },
       {
         id: 2,
-        image: '/img/Look2.png',
-        brand: 'Mint&Milk',
-        name: '점프수트',
-        price: '39,000원'
+        image: '/img/Look7.png',
+        brand: 'UrbanEyes',
+        name: 'Matte Black Square Frames',
+        price: '22,000원'
       },
       {
         id: 3,
-        image: '/img/Look2.png',
-        brand: 'Mint&Milk',
-        name: '크로스백',
-        price: '39,000원'
+        image: '/img/Look8.png',
+        brand: 'ClearVision',
+        name: 'Slim Metal Aviators',
+        price: '30,000원'
       },
       {
         id: 4,
-        image: '/img/Look2.png',
-        brand: 'Mint&Milk',
-        name: '화이트 힐',
-        price: '39,000원'
+        image: '/img/Look9.png',
+        brand: 'SightLine',
+        name: 'Transparent Oval Glasses',
+        price: '28,000원'
       }
     ]
   },

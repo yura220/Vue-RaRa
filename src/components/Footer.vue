@@ -49,4 +49,3 @@ const base = import.meta.env.BASE_URL
     </div>
   </footer>
 </template>
-
