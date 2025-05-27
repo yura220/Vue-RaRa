@@ -49,18 +49,23 @@ function goTo(type) {
       <div class="p-top">
         <h3>{{ currentItem.main.brand }}</h3>
         <p>{{ currentItem.main.name }}</p>
-        <p>{{ currentItem.main.price }}</p>
-        <div class="p-dot">
-        <span
-          v-for="color in currentItem.main.colors"
-          :key="color.id"
-          class="color-dot"
-          :style="{ backgroundColor: color.colorCode }"
-          @click="activeImage = color.image; activeColorName = color.name"
-        ></span>
-        </div>
-        <p class="active-color">Color : {{ activeColorName }}</p>
         <p class="m-desc">{{ currentItem.main.desc }}</p>
+      <!-- 썸네일 목록 -->
+        <div class="c-thumbs">
+          <div
+            v-for="color in currentItem.main.colors"
+            :key="color.id"
+            class="thumb-block"
+          >
+            <img
+              :src="color.image"
+              :alt="color.name"
+              class="thumb"
+              @click="activeImage = color.image; activeColorName = color.name"
+            />
+          </div>
+        </div>
+        <p>{{ currentItem.main.price }}</p>
       </div>
 
       <div class="c-btns">
@@ -70,23 +75,7 @@ function goTo(type) {
     </div>
   </section>
 
-  <section class="bestB">
-    <!-- 썸네일 목록 -->
-    <div class="c-thumbs">
-      <div
-        v-for="color in currentItem.main.colors"
-        :key="color.id"
-        class="thumb-block"
-      >
-        <img
-          :src="color.image"
-          :alt="color.name"
-          class="thumb"
-          @click="activeImage = color.image; activeColorName = color.name"
-        />
-      </div>
-    </div>
-
+  <section id="bestB">
     <!-- 관련 상품 텍스트 정보 -->
     <div class="p-bottom">
       <div class="r-items">
