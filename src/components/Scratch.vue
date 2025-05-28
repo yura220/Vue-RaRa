@@ -121,49 +121,80 @@ function checkScratchRatio() {
 onMounted(() => {
   const c = canvas.value;
   if (!c) return;
-
   const dpr = window.devicePixelRatio || 1;
-  c.width = 550 * dpr;
-  c.height = 100 * dpr;
-  c.style.width = '600px';
-  c.style.height = '120px';
+
+  let w = 600, h = 120;
+  if (window.innerWidth <= 900 && window.innerWidth > 600) {
+    w = Math.max(window.innerWidth * 0.92, 120);
+    h = 80;
+  }
+  if (window.innerWidth <= 600) {
+    w = Math.min(window.innerWidth, 296);
+    h = 100;
+  }
+
+  c.width = w * dpr;
+  c.height = h * dpr;
+  c.style.width = w + 'px';
+  c.style.height = h + 'px';
 
   ctx = c.getContext('2d');
   if (!ctx) return;
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
   ctx.scale(dpr, dpr);
 
+  // --- 1. Gradient ---
   ctx.globalCompositeOperation = 'source-over';
-  const gradient = ctx.createLinearGradient(0, 0, 550, 100);
+  const gradient = ctx.createLinearGradient(0, 0, w, h);
   gradient.addColorStop(0, '#777');
   gradient.addColorStop(0.5, '#ccc');
-  gradient.addColorStop(1, '#555');
+  gradient.addColorStop(1, '#666');
   ctx.fillStyle = gradient;
-  ctx.fillRect(0, 0, 600, 120);
+  ctx.fillRect(0, 0, w, h);
+
+  // --- 2. Text 스타일 분기 ---
+  let isMobile = window.innerWidth <= 425;
+  let canvasText, fontSize, angle, fillAlpha, rowGap, xGap;
+  if (isMobile) {
+    canvasText = " LARA LOTTERY ";
+    fontSize = Math.max(13, h * 0.14) + "px Arial";
+    angle = -0.25;
+    fillAlpha = 0.23;
+    rowGap = h * 0.28;
+    xGap = 10;
+  } else {
+    canvasText = " LARA LOTTERY ";
+    fontSize = Math.max(18, h * 0.18) + "px Arial";
+    angle = -0.26;
+    fillAlpha = 0.27;
+    rowGap = h * 0.33;
+    xGap = 15;
+  }
 
   ctx.save();
-  ctx.translate(260, 50);
-  ctx.rotate(-0.3);
-  ctx.font = '16px Arial';
-  ctx.fillStyle = 'rgba(255,255,255,0.25)';
-  const text = 'LARA LOTTERY ';
-  const textWidth = ctx.measureText(text).width;
-  const xGap = textWidth + 10;
-  const yGap = 35;
-  for (let y = -200; y < 200; y += yGap) {
-    for (let x = -400; x < 400; x += xGap) {
-      ctx.fillText(text, x, y);
-    }
+  ctx.translate(w * 0.05, h * 0.14);
+  ctx.rotate(angle);
+  ctx.font = fontSize;
+  ctx.fillStyle = `rgba(255,255,255,${fillAlpha})`;
+  const textWidth = ctx.measureText(canvasText).width;
+
+for (let y = -h; y < h * 2; y += rowGap) {
+  let x = -w;
+  while (x < w * 2) {
+    ctx.fillText(canvasText, x, y);
+    x += textWidth + xGap;
   }
+}
   ctx.restore();
 
   ctx.globalCompositeOperation = 'destination-out';
 
-  // 파이어폭스 대응 pointer 이벤트 사용
   c.addEventListener('pointerdown', handleStart);
   c.addEventListener('pointermove', handleMove);
   c.addEventListener('pointerup', handleEnd);
   c.addEventListener('pointerleave', handleEnd);
 });
+
 </script>
 
 <style scoped>
@@ -281,8 +312,8 @@ font-size: 18px;
 
 /* 긁기 캔버스 */
 canvas {
-  width: 600px;
-  height: 120px;
+  width: 600px !important;
+  height: 120px !important;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -339,24 +370,6 @@ canvas.cleared {
   font-weight: 800;
 }
 
-/* 힌트 애니메이션 */
-@keyframes pulseText {
-  0%, 100% {
-    color: #3a3a3a;
-  }
-  50% {
-    color: #5c5c5c;
-  }
-}
-@keyframes growShrink {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-}
-
 .scratch-hint {
   position: absolute;
   bottom: 68px;;
@@ -378,5 +391,169 @@ canvas.cleared {
   font-weight: 500;
   height: 19px;
 }
+
+/*1. 태블릿 버전 (900px 이하) */
+@media (max-width: 900px) {
+    .scratch-wrapper{
+    position: absolute;
+    top: 51px;
+    left: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+  }
+  .scratch-box {
+    width: 70vw !important;
+    height: 210px !important;
+    min-width: 160px !important;
+    max-width: 70vw !important;
+  }
+  .box-top {
+    width: 70vw !important;
+    min-width: 100px !important;
+    max-width: 80vw !important;
+    height: 80px !important;
+    column-gap: 4px;
+    margin-bottom: 10px;
+  }
+  .box-top img {
+    width: 75px !important;
+    height: 75px !important;
+  }
+  .title-hint h2 {
+    font-size: 18px !important;
+    height: 33px !important;
+    width: 280px !important;
+    padding-top: 3px;
+  }
+  .title-hint p {
+    font-size: 16px !important;
+    margin-top: 5px;
+  }
+  .scratch-area,
+  .content,
+  canvas {
+    width: 95vw !important;
+    max-width: 470px !important;
+    min-width: 100px !important;
+    height: 80px !important;
+    min-height: 40px !important;
+    max-height: 100px !important;
+    border-radius: 65px !important;
+    margin-bottom: 10px;
+  }
+  .content h3 {
+    font-size: 18px !important;
+    margin-top: 5px;
+  }
+  .content p {
+    font-size: 12px !important;
+    margin-top: 0;
+  }
+  .explanation {
+    width: 193px !important;
+    font-size: 10px !important;
+    right: 82px !important;
+    height: 15px !important;
+    bottom: 8px;
+
+  }
+}
+
+
+   /*모바일(반응형) 버전 (425px 이하)*/
+  @media (max-width: 425px) {
+  .scratch-wrapper{
+    position: absolute;
+    top: -155px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+  }
+.scratch-border {
+    width: 100vw !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 auto !important;
+    display: block;
+    box-sizing: border-box;
+}
+  .scratch-box {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box;
+    height: 300px !important;      /* ← 높이 넉넉하게 */
+    min-height: 170px !important;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .box-top {
+    height: 87px !important;
+    width: 99vw !important;
+    column-gap: 6px;
+    margin: 20px  0;
+  }
+  .box-top img {
+     display: none !important;
+  }
+  .title-hint h2 {
+    font-size: 18px !important;
+    height: 38px !important;
+    width: 266px !important;
+    padding-top: 5px;
+  }
+  .title-hint h2::before, .title-hint h2::after {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    bottom: 10px;
+  }
+  .title-hint h2::before {
+    left: -25px;
+  }
+  .title-hint h2::after {
+    right: -25px;
+  }
+  .title-hint p {
+    font-size: 14.5px !important;
+    margin-top: 6px;
+    width: 322px;
+  }
+  .scratch-area,
+  .content,
+  canvas {
+    width: 100vw !important;
+    max-width: 300px !important;
+    min-width: 60px !important;
+    height: 130px !important;
+    min-height: 35px !important;
+    max-height: 130px !important;
+    border-radius: 0px !important;
+    margin-bottom: 10px;
+    cursor: -moz-grabbing;
+  }
+  .content h3 {
+    font-size: 22px !important;
+    margin-top: 4px;
+  }
+  .content p {
+    font-size: 12px !important;
+    margin-top: 0;
+  }
+  .explanation {
+  display: none;
+  }
+
+  }
 
 </style>

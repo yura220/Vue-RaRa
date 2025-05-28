@@ -3,6 +3,7 @@ import Sidebar from './components/Sidebar.vue'
 import HeaderNav from './components/HeaderNav.vue'
 import Footer from './components/Footer.vue'
 import { ref, onMounted, onBeforeUnmount, computed } from 'vue'
+import RecentViewed from './components/RecentViewed.vue'
 
 const isSideOpen = ref(false)
 const isMobile = ref(window.innerWidth <= 767)
@@ -30,5 +31,6 @@ onBeforeUnmount(() => {
     @toggleSide="isSideOpen = !isSideOpen"
   />
   <router-view :key="$route.fullPath" />
+  <RecentViewed />
   <Footer />
 </template>
